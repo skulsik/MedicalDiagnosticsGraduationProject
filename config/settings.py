@@ -86,7 +86,6 @@ DATABASES = {
         'NAME': 'medical_diagnostics',
         'USER': os.getenv('DB_USER'),
         'PASSWORD': os.getenv('DB_PASSWORD'),
-        #'HOST': 'db'
     }
 }
 
