@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<!-- Site Title -->
+	<title>404 - Страница недоступна</title>
+	<!-- Favicon Icon -->
+	<link rel="icon" type="image/x-icon" href="{% static 'images/favicon-blue-32x32.png' %}" />
+	<!-- Google web Font -->
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400">
+	<!-- Font Awesoeme Stylesheet CSS -->
+	<link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}" />
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- Custom Main Stylesheet CSS -->
+	<link rel="stylesheet" href=" {% static 'css/style.css' %}">
+</head>
+<body>
+	<!-- Start Not Found Section -->
+	<div class="notfound-wrapper">
+		<h1 class="notfound-ttl">404</h1>
+		<p class="notfound-tag-1">Страница недоступна!!!</p>
+		<span class="notfound-tag-2">То что вы пытаетесь открыть, недоступно...</span>
+		<div class="notfound-link">
+			<a href="{% url 'main:home' %}" class="button-icon"><span>Главная</span><i class="fa fa-home"></i></a>
+		</div>
+		<ul class="social-list notfound-social">
+			<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="#"><i class="fa fa-google"></i></a></li>
+			<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+			<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+			<li><a href="#"><i class="fa fa-flickr"></i></a></li>
+			<li><a href="#"><i class="fa fa-rss"></i></a></li>
+		</ul>
+	</div><!-- End Not Found Section -->
+</body>
+</html>

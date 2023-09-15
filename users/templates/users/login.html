@@ -1,0 +1,43 @@
+{% extends 'main/base.html' %}
+{% load FilterExtension %}
+{% block content %}
+
+<!-- Start page Title Section -->
+    <div class="page-ttl">
+        <div class="layer-stretch">
+            <div class="page-ttl-container">
+                <h1>Вход в портал</h1>
+                <p><a href="{% url 'main:home' %}">Главная</a> &#8594; <span>Вход</span></p>
+            </div>
+        </div>
+    </div>
+<!-- End page Title Section -->
+<!-- Start Login Section -->
+    <div id="login-page" class="layer-stretch">
+        <div class="layer-wrapper">
+            <div class="form-container">
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form.as_p|login_form }}
+                    <div class="text-right">
+                        <a href="{% url 'users:reset_password' %}">Забыли пароль?</a>
+                    </div>
+                    <div class="form-submit">
+                        <button type="submit" class="mdl-button mdl-js-button mdl-js-ripple-effect button button-primary">Войти</button>
+                    </div>
+                </form>
+                <div class="or-using">Войти через аккаунт</div>
+                <div class="social-login">
+                    <a href="#" class="social-facebook"><i class="fa fa-facebook"></i>Facebook</a>
+                    <a href="#" class="social-google"><i class="fa fa-google"></i>Google</a>
+                </div>
+                <div class="login-link">
+                    <span class="paragraph-small">Нет аккаунта?</span>
+                    <a href="{% url 'users:register' %}" class="">Зарегистрироваться</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- End Login Section -->
+
+{% endblock %}

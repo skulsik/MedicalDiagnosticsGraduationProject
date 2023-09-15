@@ -1,0 +1,47 @@
+{% extends 'main/base.html' %}
+{% block content %}
+
+<!-- Start Page Title Section -->
+    <div class="page-ttl">
+        <div class="layer-stretch">
+            <div class="page-ttl-container">
+                <h1>Мои отзывы</h1>
+                <p><a href="{% url 'main:home' %}">Главная</a> &#8594; <span>Мои отзывы</span></p>
+            </div>
+        </div>
+    </div>
+<!-- End Page Title Section -->
+
+<div id="accordion">
+
+    <div class="theme-material-card">
+        <div class="theme-accordion-container">
+            {% for object in object_list %}
+            <div class="theme-accordion">
+                <div class="theme-accordion-hdr">
+                    <h4 class="color-green"><i class="fa fa-stethoscope"></i>{{ object.date_time }}</h4>
+                    <div class="theme-accordion-control"><i class="fa fa-plus"></i></div>
+                </div>
+                <div class="theme-accordion-bdy">
+                    <div class="row service-accordian">
+                        <div class="col-sm-3 theme-accordian-img text-center">
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="paragraph-small paragraph-black">
+                                {{ object.text }}
+                            </p>
+                            <div class="pull-right">
+                                <a class="anchor-icon" href="{% url 'main:delete_feedback' object.id %}">Удалить<i class="fa fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                        <div class="col-sm-3 theme-accordian-img text-center">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

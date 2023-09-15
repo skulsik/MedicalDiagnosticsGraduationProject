@@ -1,0 +1,279 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% load FilterExtension %}
+
+{% block content %}
+
+<!-- Start Slider Section -->
+    <div id="slider" class="slider-height">
+        <div class="flexslider slider-wrapper">
+            <ul class="slides">
+                <li>
+                    <div class="slider-info">
+                        <h1 class="animated fadeInDown">У нас лучшее оборудование</h1>
+                        <p class="animated fadeInDown">Сектор медицинского оборудования сегодня не совсем такой, каким он был пять лет назад. Благодаря большому количеству инновационных цифровых решений, которые ежедневно появляются у нас благодаря технологиям, был достигнут ряд достижений в области сбора данных, лечения, исследований и медицинских устройств, таких как слуховые аппараты, которые оказали огромное влияние на мир медицины. В частности, искусственный интеллект помог индустрии медицинского оборудования сделать больше для улучшения системы здравоохранения. Новейшие тенденции в области искусственного интеллекта для медицинских устройств включают автоматизированную доставку инсулина, компьютерную томографию GE HEalthcare и инструменты визуализации поражений почек и печени, а также инновационные приложения, которые отслеживают состояние пациента.</p>
+                    </div>
+                    <img src="{% static 'images/slider-1.jpg' %}" alt="" />
+                    <div class="slider-button slider-appointment">
+                        <a href="{% url 'main:create_appointment' %}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect animated fadeInUp">Запись на прием<i class="fa fa-flag-checkered"></i></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="slider-info">
+                        <h2>Немного о клинике</h2>
+                        <p>Частная клиника предлагает своим клиентам сервис высочайшего уровня, современные технологии и медицинское обслуживание по западным стандартам. Ведется прием по многим направлениям, для взрослых и детей (аллергология, акушерство и гинекология, венерология, неврология, хирургия и многое другое). Существует программа привилегий для пациентов.</p>
+                    </div>
+                    <img src="{% static 'images/slider-2.jpg' %}" alt="" />
+                    <div class="slider-button slider-appointment">
+                        <a href="{% url 'main:create_appointment' %}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect animated fadeInUp">Запись на прием<i class="fa fa-external-link"></i></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="slider-info">
+                        <h2>24/7/4,5/12 Работа без выходных</h2>
+                        <p>Мы работаем 24 часа в сутки, 7 дней в неделю, 4,5 недели в месяц и 12 месяцев в году. Неважно где вы находитесь, наш катафалк доставит Вас прямо к нам в клинику.</p>
+                    </div>
+                    <img src="{% static 'images/slider-3.jpg' %}" alt="" />
+                    <div class="slider-button slider-appointment">
+                        <a href="{% url 'main:create_appointment' %}" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect animated fadeInUp">Запись на прием<i class="fa fa-chevron-right"></i></a>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+    </div><!-- End Slider Section -->
+    <!-- Start Service Section -->
+    <div id="hm-service" class="layer-stretch">
+        <div class="layer-wrapper">
+            <div class="layer-ttl">
+                <h3>Что мы можем предложить</h3>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="service-card">
+                        <i class="fa fa-user-md"></i>
+                        <h5>Отделения неотложной помощи</h5>
+                        <p class="paragraph-small paragraph-black">Первичная медико-санитарная помощь оказывается бесплатно в амбулаторных условиях и в условиях дневного стационара, в плановой и неотложной формах, является основой системы оказания медицинской помощи и включает в себя мероприятия по профилактике, диагностике, лечению заболеваний и состояний, медицинской реабилитации, наблюдению за течением беременности, формированию здорового образа жизни и санитарно-гигиеническому просвещению населения.</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="service-card">
+                        <i class="fa fa-shield"></i>
+                        <h5>Лучшая инфраструктура</h5>
+                        <p class="paragraph-small paragraph-black">По показателю развития инфраструктуры центр медицинской диагностики победил, набрав 83,2 балла, второе и третье место заняли Гонконг (78,16 балла) и Париж (76,3 балла). Уровень качества обслуживания в нашем центре, исследователи оценили в 68,33 балла, наша чудесная клиника обогнала Сингапур (67,21 балла) и Гонконг (63,43 балла). В глобальном же рейтинге топовых клиник мы находимся на третьем месте, уступив Сингапуру и Торонто. </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="service-card">
+                        <i class="fa fa-stethoscope"></i>
+                        <h5>Анализы</h5>
+                        <p class="paragraph-small paragraph-black">Уникальный сервис, что бы сдать анализы ни куда ходить не нужно. Наша группа по сбору анализов приедет к Вам. Лучшие специалисты возьмут у вас все необходимые анализы и тут же предоставят результаты.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- End Service Section -->
+    <!-- Start About Section -->
+    <div id="hm-about" class="parallax-background parallax-background-1">
+        <div class="layer-stretch">
+            <div class="layer-wrapper">
+                <div class="layer-ttl layer-ttl-white">
+                    <h3>Некоторые направления нашей деятельности</h3>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="pr-5 pb-5 pt-2">
+                            <div class="doctor-skills">
+                                <p class="font-14 color-white">Операции на головном мозге <span class="badge badge-primary float-right">50%</span></p>
+                                <div class="progress progress-md mb-4">
+                                    <div class="progress-bar progress-bar-striped bg-primary" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="doctor-skills">
+                                <p class="font-14 color-white">Операции на сердце <span class="badge badge-danger float-right">65%</span></p>
+                                <div class="progress progress-md mb-4">
+                                    <div class="progress-bar progress-bar-striped bg-danger" role="progressbar" style="width: 65%" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="doctor-skills">
+                                <p class="font-14 color-white">Травматологическая хирургия <span class="badge badge-success float-right">80%</span></p>
+                                <div class="progress progress-md mb-4">
+                                    <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="doctor-skills">
+                                <p class="font-14 color-white">Общая хирургия <span class="badge badge-warning float-right">99%</span></p>
+                                <div class="progress progress-md mb-4">
+                                    <div class="progress-bar progress-bar-striped bg-warning" role="progressbar" style="width: 99%" aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hm-about-paragraph">
+                            <p class="paragraph-medium paragraph-white">
+                                <span class="theme-dropcap color-white">Х</span>Хирургия является одной из самых древних отраслей медицины. Старейший хирургический метод, в отношении которого есть доказательства, - это трепанация, в котором отверстие сверлили или выскребали в черепе, чем вскрывали твёрдую мозговую оболочку в целях лечения проблем со здоровьем, связанных с внутричерепным давлением и другими заболеваниями[2]. За 6 тыс. лет до н. э. выполняли такую операцию, как удаление камней из мочевого пузыря; при переломах костей накладывали повязки для иммобилизации. Для лечения ран применяли вино, мёд и масло. Сведения о состоянии медицины в IV—V тысячелетии до н. э. в летописях не значатся. И лишь за 1,5 тысячи лет до н. э. в Древней Индии начали развивать хирургию. Были изобретены хирургические инструменты (более 100 наименований). В это время производили такие оперативные вмешательства как пластические операции носа, удаление инородных тел, разрабатывали методы остановки кровотечения (гемостаз).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <img class="img-thumbnail" src="{% static 'images/hm-about.jpg' %}" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div><!-- End About Section -->
+    <!-- Start Feature Section -->
+    <div id="hm-feature" class="layer-stretch">
+        <div class="layer-wrapper layer-bottom-10">
+            <div class="layer-ttl">
+                <h3>Почему вы выбрали именно нас</h3>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <div class="hm-feature-block-1">
+                        <div class="theme-img theme-img-scalerotate">
+                            <img src="{% static 'images/feature-1.jpg' %}" alt="">
+                        </div>
+                        <span>Лечение по ОМС</span>
+                        <p class="paragraph-small paragraph-black">Если нет денег, вздохните свободно, за все платит государство по полису из ваших налогов. </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="hm-feature-block-1">
+                        <div class="theme-img theme-img-scalerotate">
+                            <img src="{% static 'images/feature-2.jpg' %}" alt="">
+                        </div>
+                        <span>Круглосуточная работа</span>
+                        <p class="paragraph-small paragraph-black">Посетив нас, Вы никогда не упретесь в закрытую дверь, ведь мы работаем круглосуточно все 365 дней в году, чего не скажешь о других коиниках.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="hm-feature-block-1">
+                        <div class="theme-img theme-img-scalerotate">
+                            <img src="{% static 'images/feature-3.jpg' %}" alt="">
+                        </div>
+                        <span>Передовые технологии</span>
+                        <p class="paragraph-small paragraph-black">Мы сотрудничаем с Китаем и Индией, лучшие специалисты создают уникальную технику только для нас. РосКосмос и РосАтом могут только позавидовать.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="hm-feature-block-1">
+                        <div class="theme-img theme-img-scalerotate">
+                            <img src="{% static 'images/feature-4.jpg' %}" alt="">
+                        </div>
+                        <span>Скорая помощь</span>
+                        <p class="paragraph-small paragraph-black">Наши кареты скорой помощи приезжают в любую точку области за 15 минут. Если существует необходимость задействуется авиация. Имеется собственный парк реактивных самолетов.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="hm-feature-block-1">
+                        <div class="theme-img theme-img-scalerotate">
+                            <img src="{% static 'images/feature-5.jpg' %}" alt="">
+                        </div>
+                        <span>Травмпункт</span>
+                        <p class="paragraph-small paragraph-black">У нас не бывает ситуаций когда тебе говорят: что со сломаной рукой следует идти домой, много дел и тд. Обслужим всех, быстро качественно, даже если ничего не болит.</p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="hm-feature-block-1">
+                        <div class="theme-img theme-img-scalerotate">
+                            <img src="{% static 'images/feature-6.jpg' %}" alt="">
+                        </div>
+                        <span>Лекарства</span>
+                        <p class="paragraph-small paragraph-black">В вашем распоряжении сеть наших аптек, самые низкие цены, доставка лекарств на дом.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!-- End Feature Section -->
+    <!-- Start Doctor Section -->
+    <div class="parallax-background parallax-background-2">
+        <div class="layer-stretch">
+            <div class="layer-wrapper">
+                <div class="layer-ttl layer-ttl-white">
+                    <h3>Наша команда</h3>
+                </div>
+                <div class="layer-container">
+                    <div id="hm-doctor-slider" class="owl-carousel owl-theme theme-owl-dot">
+
+                        {% if doctors %}
+                            {% for doctor in doctors %}
+                            <div class="hm-doctor">
+                                <img class="img-responsive" src="{{ doctor.owner.avatar|mediapath }}" alt="">
+                                <h6>{{ doctor.owner.first_name }} {{ doctor.owner.last_name }}</h6>
+                                <p>{{ doctor.post.name }}</p>
+                            </div>
+                            {% endfor %}
+                        {% else %}
+                            <h1>Команды пока нет, наберите её скорее!</h1>
+                        {% endif %}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- End Doctor Section -->
+<!-- Start Blog Section -->
+    <div id="hm-blog" class="layer-stretch">
+        <div class="layer-wrapper layer-bottom-10">
+            <div class="layer-ttl">
+                <h3>Последние публикации блога</h3>
+            </div>
+            <div class="row">
+                {% for blog in blog_list %}
+                <div class="col-md-6">
+                    <div class="blog-list-block">
+                        <div class="blog-list-picture">
+                            <div class="theme-img theme-img-scalerotate">
+                                <img src="{{ blog.image|mediapath }}" alt="">
+                            </div>
+                        </div>
+                        <div class="blog-list-ttl">
+                            <h3><a href="{% url 'blog:view_blog' blog.slug %}">{{ blog.name }}</a></h3>
+                        </div>
+                        <div class="blog-list-meta">
+                            <p>Автор: {{ blog.owner.first_name }} {{ blog.owner.last_name }}<BR>Дата публикации: {{ blog.date_time }}</p>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+<!-- End Blog Section -->
+<!-- Start Testimonial Section -->
+    <div id="testimonial" class="parallax-background parallax-background-3">
+        <div class="layer-stretch">
+            <div class="layer-wrapper">
+                <div class="layer-ttl layer-ttl-white">
+                    <h3>Что думают о нас люди</h3>
+                </div>
+                <div class="layer-container">
+                    <div id="testimonial-slider" class="owl-carousel owl-theme theme-owl-dot">
+
+                        {% if feedbacks %}
+                            {% for feedback in feedbacks %}
+                            <div class="testimonial-block">
+                                <img class="img-responsive" style="width: 30%; height: 30%;" src="{{ feedback.owner.avatar|mediapath }}" alt="{{ feedback.owner.first_name }} {{ feedback.owner.last_name }}">
+                                <div class="paragraph-medium paragraph-white">
+                                    <i class="fa fa-quote-left"></i>
+                                    {{ feedback.text }}
+                                </div>
+                                <a>{{ feedback.owner.first_name }} {{ feedback.owner.last_name }}</a>
+                            </div>
+                            {% endfor %}
+                        {% else %}
+                            <h1>Отзывов пока нет, плохие мы не отображаем)))!</h1>
+                        {% endif %}
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- End Testimonial Section -->
+
+{% endblock %}

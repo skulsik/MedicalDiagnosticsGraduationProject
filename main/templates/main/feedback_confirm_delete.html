@@ -1,0 +1,54 @@
+{% extends 'main/base.html' %}
+
+{% block content %}
+
+{% if object.owner == user %}
+
+<!-- Start Page Title Section -->
+    <div class="page-ttl">
+        <div class="layer-stretch">
+            <div class="page-ttl-container">
+                <h1>Удаление отзыва</h1>
+                <p><a href="{% url 'main:home' %}">Главная</a> &#8594; <span>Удаление отзыва</span></p>
+            </div>
+        </div>
+    </div>
+<!-- End Page Title Section -->
+
+<!-- Start My Profile Section -->
+    <div id="profile-page" class="layer-stretch">
+        <div class="layer-wrapper">
+            <div class="theme-material-card text-center">
+                <form method="post">
+                <div class="row">
+                    <div class="col-md-2">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="theme-block theme-block-hover">
+
+                            {% csrf_token %}
+                            <h3>Уверены, что хотите удалить отзыв?</h3><br><br>
+                            <div class="text-left">
+                                <h5>Дата создания: {{ object.date_time }}</h5><BR>
+                                <h5>Содержание:</h5> {{ object.text }}<BR><BR>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                    </div>
+                </div>
+                <div class="form-submit">
+                    <input type="submit" class="mdl-button mdl-js-button mdl-js-ripple-effect button button-danger" value="Подтвердите удаление">
+                </div>
+                </form>
+            </div>
+        </div>
+    </div><!-- End My Profile Section -->
+
+{% else %}
+
+{% include 'main/404.html' %}
+
+{% endif %}
+
+{% endblock %}
