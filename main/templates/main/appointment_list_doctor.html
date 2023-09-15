@@ -1,0 +1,137 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% load FilterExtension %}
+{% block content %}
+
+<!-- Start Page Title Section -->
+    <div class="page-ttl">
+        <div class="layer-stretch">
+            <div class="page-ttl-container">
+                <h1>Расписание приема</h1>
+                <p><a href="{% url 'main:home' %}">Главная</a> &#8594; <span>Расписание приема для {{ user.first_name }} {{ user.last_name }}</span></p>
+            </div>
+        </div>
+    </div>
+<!-- End Page Title Section -->
+
+<div id="accordion">
+
+    {% if user.role_status == 'DOCTOR' %}
+    <div class="theme-material-card">
+        <div class="col-sm-12 text-center">
+        <div class="col-sm-8">
+            <h3>Расписание на сегодняшний день</h3>
+            {% for day in days %}
+            {% if day == day_now %}
+            <table class="table-bordered" width="100%">
+                {% for time in times_list %}
+                <tr>
+                    <td class="col-md-2">
+                        <span class="text-success">{{ time|time_seconds_modified }} </span>
+                    </td>
+                    <td>
+                        {% for appointment in object_list %}
+                        {% if day == appointment.date|date_modified %}
+                        {% if time == appointment.time %}
+                        <a href="{% url 'main:user_profile' appointment.owner.id %}">{{ appointment.owner.last_name }} {{ appointment.owner.first_name }}</a>
+                        {% endif %}
+                        {% endif %}
+                        {% endfor %}
+                    </td>
+                </tr>
+                {% endfor %}
+            </table>
+            {% endif %}
+            {% endfor %}
+        </div>
+      </div>
+    </div>
+</div>
+
+
+    <div class="theme-material-card">
+
+                        <div class="col-sm-12">
+
+                            <!-- Start Event Calendar Section -->
+                            <div class="theme-material-card p-5">
+                                <h3>{{ month }} {{ year }}</h3>
+                                <table class="table table-bordered">
+                                    <thead>
+                                    <tr class="table-primary-head text-center">
+                                        <th style="width: 100px">Понедельник</th>
+                                        <th style="width: 100px">Вторник</th>
+                                        <th style="width: 100px">Среда</th>
+                                        <th style="width: 100px">Четверг</th>
+                                        <th style="width: 100px">Пятница</th>
+                                        <th style="width: 100px">Суббота</th>
+                                        <th style="width: 100px">Воскресенье</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        {% for day in days %}
+                                            {% if day == 0 %}
+                                    </tr>
+                                    <tr>
+                                            {% else %}
+                                        <td {% if day == day_now %} class="table-info" {% endif %} style="height: 100px; text-align: center">
+                                                {% if day >= day_now %}
+                                                <h4><a data-toggle="modal" data-target="#{{ day }}">{{ day }}</a></h4>
+                                                {% else %}
+                                                <h4>{{ day }}</h4>
+                                                {% endif %}
+                                                <!-- Start appointment Modal -->
+                                                        <div id="{{ day }}" class="modal fade" role="dialog">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header text-center">
+                                                                        <h5 class="modal-title">Расписание приема врача</h5>
+                                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                                    </div>
+                                                                    <div class="modal-body text-left">
+                                                                        <div class="table-primary p-3">
+                                                                            <span class="paragraph-medium">
+                                                                                <span class="text-dark text-left">{{ month }} {{ year }} года {{ day }} число</span>
+                                                                            </span>
+                                                                        </div>
+                                                                        <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
+                                                                            <table class="table-bordered" width="90%">
+                                                                            {% for time in times_list %}
+                                                                                <tr>
+                                                                                    <td>
+                                                                                        <span class="text-success">{{ time|time_seconds_modified }} </span>
+                                                                                    </td>
+                                                                                    <td>
+                                                                                    {% for appointment in object_list %}
+                                                                                        {% if day == appointment.date|date_modified %}
+                                                                                            {% if time == appointment.time %}
+                                                                                                <a href="{% url 'main:user_profile' appointment.owner.id %}">{{ appointment.owner.last_name }} {{ appointment.owner.first_name }}</a>
+                                                                                            {% endif %}
+                                                                                        {% endif %}
+                                                                                    {% endfor %}
+                                                                                    </td>
+                                                                                </tr>
+                                                                            {% endfor %}
+                                                                            </table>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- End appointment Modal -->
+
+                                        </td>
+                                            {% endif %}
+                                        {% endfor %}
+                                    </tr>>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!-- End Event Calendar Section -->
+
+                        </div>
+    </div>
+    {% endif %}
+
+{% endblock %}

@@ -1,0 +1,37 @@
+{% extends 'main/base.html' %}
+{% load FilterExtension %}
+
+{% block content %}
+
+<!-- Start Page Title Section -->
+    <div class="page-ttl">
+        <div class="layer-stretch">
+            <div class="page-ttl-container">
+                <h1>Права и лицензии</h1>
+                <p><a href="{% url 'main:home' %}">Главная</a> &#8594; <span>Ссылочки</span></p>
+            </div>
+        </div>
+    </div>
+<!-- End Page Title Section -->
+
+    <div id="profile-page" class="layer-stretch">
+        <div class="layer-wrapper">
+            <div class="theme-material-card text-center">
+                <div class="row">
+                    <div class="col-md-2">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="theme-block theme-block-hover">
+                            <h3>Все честно и прозрачно, приношу партнерам свои благодарности!</h3><br><br>
+                            <a href="http://pepdev.com/template/klinik/blue/index.html">Шаблон сайта с http://pepdev.com</a><br>
+                            <a href="https://ru.freepik.com/free-vector/hospital-logo-design-vector-medical-cross_18246203.htm#query=logo%20medicina%20png&position=0&from_view=keyword&track=ais">Все изображения с https://ru.freepik.com</a>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

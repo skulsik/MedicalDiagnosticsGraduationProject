@@ -1,0 +1,370 @@
+{% load static %}
+    {% load FilterExtension %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Site Title -->
+    <title>Центр медецинской диагностики</title>
+    <!-- Meta Description Tag -->
+    <meta name="Description" content="Центр медецинской диагностики">
+    <!-- Favicon Icon -->
+    <link rel="icon" type="image/x-icon" href="{% static 'images/favicon.png' %}" />
+    <!-- Font Awesoeme Stylesheet CSS -->
+    <link rel="stylesheet" href="{% static 'font-awesome/css/font-awesome.min.css' %}" />
+    <!-- Google web Font -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Montserrat:400,500">
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- Material Design Lite Stylesheet CSS -->
+    <link rel="stylesheet" href="{% static 'css/material.min.css' %}" />
+    <!-- Material Design Select Field Stylesheet CSS -->
+    <link rel="stylesheet" href="{% static 'css/mdl-selectfield.min.css' %}">
+    <!-- Owl Carousel Stylesheet CSS -->
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}" />
+    <!-- Animate Stylesheet CSS -->
+    <link rel="stylesheet" href="{% static 'css/animate.min.css' %}" />
+    <!-- Magnific Popup Stylesheet CSS -->
+    <link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}" />
+    <!-- Flex Slider Stylesheet CSS -->
+    <link rel="stylesheet" href="{% static 'css/flexslider.css' %}" />
+    <!-- Custom Main Stylesheet CSS -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <style>
+        .toBeReplaced {
+            visibility: hidden;
+            position: relative;
+        }
+        .toBeReplaced:after {
+            color: red;
+            visibility: visible;
+            position: absolute;
+            top: -3px;
+            left: 0;
+            content: "Занято";
+        }
+    </style>
+
+</head>
+<body>
+    <!-- Start Header -->
+    <header id="header-3">
+        <div class="layer-stretch hdr-center">
+            <div class="row align-items-center">
+                <div class="col-4">
+                    <div class="hdr-center-logo">
+                        <a href="{% url 'main:home' %}" class="d-inline-block"><img src="{% static 'images/logo.jpg' %}" alt="логотип"><h7>Центр медицинской диагностики</h7></a>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <div class="hdr-center-submenu row pull-right">
+                        <div class="col-md-auto mr-3 d-none d-sm-none d-md-none d-lg-block d-xl-block">
+                            <div class="tbl-cell">
+                                <i class="fa fa-envelope-o"></i>
+                            </div>
+                            <div class="tbl-cell text-left p-0">
+                                <p class="font-12 m-0 text-muted">Есть вопросы?</p>
+                                <p class="font-14 m-0"><a href="mailto:cmd@pochta.com">cmd@pochta.com</a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-auto d-none d-sm-none d-md-block d-lg-block d-xl-block">
+                            <div class="tbl-cell">
+                                <i class="fa fa-mobile font-28"></i>
+                            </div>
+                            <div class="tbl-cell text-left p-0">
+                                <p class="font-12 m-0 text-muted">Бесплатная консультация</p>
+                                <p class="font-14 m-0">+7(777)777-77-77</p>
+                            </div>
+                        </div>
+                        <div class="col-md-auto pl-3 d-none d-sm-block d-md-block d-lg-block d-xl-block">
+                            <button class="mdl-button mdl-button--colored mdl-button--raised hdr-apointment">
+                                <i class="fa fa-calendar m-0 color-white"></i>
+                                <a style="color: #e9ecef" href="{% url 'main:create_appointment' %}">Записаться на прием</a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hdr-center-menu">
+            <div class="hdr layer-stretch">
+                <div class="row align-items-center justify-content-end">
+                    <ul class="col menu text-left m-0 p-0">
+                        <li>
+                            <a href="{% url 'main:home' %}" id="" class="mdl-button mdl-js-button mdl-js-ripple-effect">Главная</a></li>
+                        <li>
+                        <li class="menu-megamenu-li">
+                            <a id="menu-pages" class="mdl-button mdl-js-button mdl-js-ripple-effect">Запись на прием <i class="fa fa-chevron-down"></i></a>
+                            <ul class="menu-megamenu">
+                                <li class="row">
+                                    <div class="col-lg-3">
+                                        <div class="megamenu-ttl">Запись на прием</div>
+                                        <ul>
+                                            <li><a href="{% url 'main:create_appointment' %}">Записаться на прием</a></li>
+                                            <li><a href="{% url 'main:appointments' %}">Посмотреть свободное время</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="theme-img">
+                                            <img src="{% static 'images/service-5.jpg' %}" alt="">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a id="menu-blog" class="mdl-button mdl-js-button mdl-js-ripple-effect">Блог <i class="fa fa-chevron-down"></i></a>
+                            <ul class="menu-dropdown">
+                                {% if user.is_authenticated %}
+                                <li><a href="{% url 'blog:create_blog' %}">Опубликовать статью</a></li>
+                                <li><a href="{% url 'blog:user_list_blog' %}">Посмотреть мои статьи</a></li>
+                                {% endif %}
+                                <li><a href="{% url 'blog:list_blog' %}">Посмотреть все статьи</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a id="menu-profile" class="mdl-button mdl-js-button mdl-js-ripple-effect">Профиль <i class="fa fa-chevron-down"></i></a>
+                            <ul class="menu-dropdown">
+                                {% if user.is_authenticated %}
+                                <li><a href="{% url 'users:logout' %}">Выйти</a></li>
+                                <li><a href="{% url 'users:profile' %}">Мой профиль</a></li>
+                                <li><a href="{% url 'users:profile_update' %}">Изменить профиль</a></li>
+                                <li><a href="{% url 'main:appointments_user' %}">Записи на прием</a></li>
+                                {% else %}
+                                <li><a href="{% url 'users:login' %}">Войти</a></li>
+                                <li><a href="{% url 'users:register' %}">Регистрация</a></li>
+                                {% endif %}
+                            </ul>
+                        </li>
+                        {% if user.is_authenticated %}
+                            {% if user.role_status == 'PATIENT' %}
+                        <li>
+                            <a class="mdl-button mdl-js-button mdl-js-ripple-effect">Отзыв</a>
+                            <ul class="menu-dropdown">
+                                <li><a href="{% url 'main:create_feedback' %}">Оставить отзыв</a></li>
+                                <li><a href="{% url 'main:user_list_feedback' %}">Мои отзывы</a></li>
+                                <li><a href="{% url 'main:list_feedback' %}">Посмотреть все отзывы</a></li>
+                            </ul>
+                        </li>
+                            {% endif %}
+                        {% endif %}
+                        <li>
+                            <a href="{% url 'main:rights_content' %}" id="menu-shortcodes" class="mdl-button mdl-js-button mdl-js-ripple-effect">Права и лицензии</a>
+                        </li>
+                        <li>
+                            {% if user.is_superuser %}
+                                <a class="bi-arrow-counterclockwise" href="{% url 'admin:index' %}">Админ панель</a>
+                            {% endif %}
+                        </li>
+                        <li>
+                            {% if user.is_authenticated %}
+                            {% if user.role_status == 'DOCTOR' %}
+                                <a class="bi-arrow-counterclockwise">Кабинет</a>
+                                <ul class="menu-dropdown">
+                                    <li><a href="{% url 'main:appointments_doctor' %}">Расписание приема пациентов</a></li>
+                                </ul>
+                            {% endif %}
+                            {% endif %}
+                        </li>
+                        <li class="mobile-menu-close"><i class="fa fa-times"></i></li>
+                    </ul>
+                    <div class="col-2 col-md-auto col-lg-auto">
+                        <div class="mdl-button mdl-js-button mdl-button--fab hdr-search">
+                            <i class="fa fa-search fa-2x color-white"></i>
+                        </div>
+                    </div>
+                    <div id="menu-bar" class="col-2 col-md-auto"><a><i class="fa fa-bars color-white"></i></a></div>
+                </div>
+                <div class="search-banner animated fadeInUp">
+                    <input type="text" placeholder="Search your Query ...">
+                </div>
+
+            </div>
+        </div>
+    </header><!-- End Header -->
+    <div style="padding-top: 100px">
+    </div>
+
+    {% block content %}
+    {% endblock %}
+
+    <!-- Start Emergency Section -->
+    <div id="emergency">
+        <div class="layer-stretch">
+            <div class="layer-wrapper">
+                <div class="layer-ttl">
+                    <h3>В экстренном случае</h3>
+                </div>
+                <div class="layer-container">
+                    <div class="paragraph-medium paragraph-black">
+                        Так же в вашем распоряжении травмпункт. Приходите, приезжайти, оформите такси нашего центра в любое время суток.
+                        Подлатаем, зашьем, выправим, вправим, прочистим и многие другие медицинские услуги. Быстро, срочно, качественно и без очереди.
+                    </div>
+                    <div class="emergency-number">Звоните: +7(777)777-77-77</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Emergency Section -->
+
+    <!-- Start Footer Section -->
+    <footer id="footer">
+        <div class="layer-stretch">
+            <!-- Start main Footer Section -->
+            <div class="row layer-wrapper">
+                <div class="col-md-8 footer-block">
+                    <div class="footer-ttl"><p>Контактная информация</p></div>
+                    <div class="footer-container footer-a">
+                        <div class="tbl">
+                            <div class="tbl-row">
+                                <div class="tbl-cell"><i class="fa fa-map-marker"></i></div>
+                                <div class="tbl-cell">
+                                    <iframe class="google-map mt-4" src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d926.4699023406306!2d84.94928929247715!3d56.47587142042048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x43269358ccd74e21%3A0xcc49670a65401896!2sAdministratsiya%20Goroda%20Tomska%2C%20Lenin%20Ave%2C%2073%2C%20Tomsk%2C%20Tomsk%20Oblast%2C%20634050!3m2!1d56.475919999999995!2d84.9503306!5e0!3m2!1sen!2sru!4v1689165533928!5m2!1sen!2sru" width="100%" height="300" allowfullscreen="" loading="lazy"></iframe>
+                                    <p class="paragraph-medium paragraph-white">
+                                        Наш центр диагностики находится прямо в здании администрации.<BR>
+                                        В скором времени, по неизвестным нам причинам, администрация Томска покинет наше здание и больше не будет Вас раздражать.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="tbl-row">
+                                <div class="tbl-cell"><i class="fa fa-phone"></i></div>
+                                <div class="tbl-cell">
+                                    <p class="paragraph-medium paragraph-white">+7(777)777-77-77</p>
+                                </div>
+                            </div>
+                            <div class="tbl-row">
+                                <div class="tbl-cell"><i class="fa fa-envelope"></i></div>
+                                <div class="tbl-cell">
+                                    <p class="paragraph-medium paragraph-white"><a href="mailto:cmd@pochta.com">cmd@pochta.com</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 footer-block">
+                    <div class="footer-ttl"><p>Быстрые ссылки</p></div>
+                    <div class="footer-container footer-b">
+                        <div class="tbl">
+                            <div class="tbl-row">
+                                <ul class="tbl-cell">
+                                    <li><a href="{% url 'main:home' %}">Главная</a></li>
+                                    <li><a href="{% url 'main:create_appointment' %}">Записаться на прием</a></li>
+                                    <li><a href="{% url 'main:appointments' %}">Посмотреть расписание приема</a></li>
+                                    <li><a href="{% url 'blog:list_blog' %}">Посмотьреть статьи</a></li>
+                                    <li><a href="{% url 'main:rights_content' %}">Права и лицензии</a></li>
+                                </ul>
+                                <ul class="tbl-cell">
+                                    {% if user.is_authenticated %}
+                                    <li><a href="{% url 'users:logout' %}">Выити</a></li>
+                                    <li><a href="{% url 'users:profile' %}">Профиль</a></li>
+                                    <li><a href="{% url 'users:profile_update' %}">Изменить профиль</a></li>
+                                    <li><a href="{% url 'main:appointments_user' %}">Записи на прием</a></li>
+                                    {% else %}
+                                    <li><a href="{% url 'users:login' %}">Войти</a></li>
+                                    <li><a href="{% url 'users:register' %}">Регистрация</a></li>
+                                    {% endif %}
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-ttl"><p>Подписка на новости сайта</p></div>
+                    <div class="footer-container footer-c">
+                        <div class="footer-subscribe">
+                            <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input">
+                                <input class="mdl-textfield__input" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" id="subscribe-email">
+                                <label class="mdl-textfield__label" for="subscribe-email">Ваша почта</label>
+                                <span class="mdl-textfield__error">Введите корректный Email!</span>
+                            </div>
+                            <div class="footer-subscribe-button">
+                                <button class="mdl-button mdl-js-button mdl-js-ripple-effect button button-primary">Подписаться</button>
+                            </div>
+                        </div>
+                        <ul class="social-list social-list-colored footer-social">
+                            <li>
+                                <a href="#" target="_blank" id="footer-facebook" class="fa fa-facebook"></a>
+                                <span class="mdl-tooltip mdl-tooltip--top" data-mdl-for="footer-facebook">Facebook</span>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" id="footer-twitter" class="fa fa-twitter"></a>
+                                <span class="mdl-tooltip mdl-tooltip--top" data-mdl-for="footer-twitter">Twitter</span>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" id="footer-google" class="fa fa-google"></a>
+                                <span class="mdl-tooltip mdl-tooltip--top" data-mdl-for="footer-google">Google</span>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" id="footer-instagram" class="fa fa-instagram"></a>
+                                <span class="mdl-tooltip mdl-tooltip--top" data-mdl-for="footer-instagram">Instagram</span>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" id="footer-youtube" class="fa fa-youtube"></a>
+                                <span class="mdl-tooltip mdl-tooltip--top" data-mdl-for="footer-youtube">Youtube</span>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" id="footer-linkedin" class="fa fa-linkedin"></a>
+                                <span class="mdl-tooltip mdl-tooltip--top" data-mdl-for="footer-linkedin">Linkedin</span>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" id="footer-flickr" class="fa fa-flickr"></a>
+                                <span class="mdl-tooltip mdl-tooltip--top" data-mdl-for="footer-flickr">Flickr</span>
+                            </li>
+                            <li>
+                                <a href="#" target="_blank" id="footer-rss" class="fa fa-rss"></a>
+                                <span class="mdl-tooltip mdl-tooltip--top" data-mdl-for="footer-rss">Rss</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div><!-- End main Footer Section -->
+        <!-- Start Copyright Section -->
+        <div id="copyright">
+            <div class="layer-stretch">
+                <div class="paragraph-medium paragraph-white">2003 © Центр медицинской диагностики. Все права защищены / ALL RIGHTS RESERVED.</div>
+            </div>
+        </div><!-- End of Copyright Section -->
+    </footer><!-- End of Footer Section -->
+
+    <!-- **********Included Scripts*********** -->
+
+    <!-- Jquery Library 2.1 JavaScript-->
+    <script src="{% static 'js/jquery-2.1.4.min.js' %}"></script>
+    <!-- Popper JavaScript-->
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <!-- Bootstrap Core JavaScript-->
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <!-- Material Design Lite JavaScript-->
+    <script src="{% static 'js/material.min.js' %}"></script>
+    <!-- Material Select Field Script -->
+    <script src="{% static 'js/mdl-selectfield.min.js' %}"></script>
+    <!-- Flexslider Plugin JavaScript-->
+    <script src="{% static 'js/jquery.flexslider.min.js' %}"></script>
+    <!-- Owl Carousel Plugin JavaScript-->
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <!-- Scrolltofixed Plugin JavaScript-->
+    <script src="{% static 'js/jquery-scrolltofixed.min.js' %}"></script>
+    <!-- Magnific Popup Plugin JavaScript-->
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <!-- WayPoint Plugin JavaScript-->
+    <script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+    <!-- CounterUp Plugin JavaScript-->
+    <script src="{% static 'js/jquery.counterup.js' %}"></script>
+    <!-- SmoothScroll Plugin JavaScript-->
+    <script src="{% static 'js/smoothscroll.min.js' %}"></script>
+    <!--Custom JavaScript for Klinik Template-->
+    <script src="{% static 'js/custom.js' %}"></script>
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-93901876-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+</body>
+</html>
