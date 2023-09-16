@@ -58,8 +58,9 @@ class HomeView(ListView):
         # Получает, все отзывы
         blog_list = Blog.objects.filter(publication=True).order_by("-date_time")
         blog_list_: list = []
-        blog_list_.append(blog_list[0])
-        blog_list_.append(blog_list[1])
+        if blog_list.count() >= 2:
+            blog_list_.append(blog_list[0])
+            blog_list_.append(blog_list[1])
         context_data['blog_list'] = blog_list_
 
         return context_data

@@ -29,7 +29,7 @@
  - Создать фаил .env и прописать в него свои настройки, по шаблону файла .env.sample
  - Создать миграции командой: python manage.py makemigrations
  - Применить миграции командой: python manage.py migrate
- - Создать супер-пользователя(админа) командой: python manage.py createsuperuser
+ - Выполнить команду: python manage.py loaddata db.json
  - Запустить сервер с проектом: python manage.py runserver
  - Наслаждаться заполнением контента и тестами сайта
 
