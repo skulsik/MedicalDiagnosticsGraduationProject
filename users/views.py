@@ -6,7 +6,7 @@ from django.contrib.auth.views import PasswordResetDoneView, PasswordContextMixi
 from django.core.exceptions import ValidationError
 from django.core.mail import send_mail
 from django.shortcuts import redirect
-from django.urls import reverse_lazy, reverse
+from django.urls import reverse_lazy
 from django.utils.encoding import force_bytes
 from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
 from django.views import View
@@ -36,7 +36,8 @@ class RegisterView(CreateView):
         activation_url = reverse_lazy('users:verify_email', kwargs={'uidb64': uid, 'token': new_token})
         send_mail(
             subject='Центр медицинской диагностики - Активация учетной записи',
-            message=f'Убедительная просьба: если хотите закончить регистрацию, пройдите по ссылке: http://127.0.0.1:8000/{ activation_url }',
+            message=f'Убедительная просьба:'
+                    f' если хотите закончить регистрацию, пройдите по ссылке: http://127.0.0.1:8000/{ activation_url }',
             from_email=settings.EMAIL_HOST_USER,
             recipient_list=[new_user.email],
             fail_silently=False
@@ -55,7 +56,9 @@ class UserActivate(View):
             Patient.objects.create(
                 owner=user
             )
-            # В случае удачи, активирует нового пользователя флагом True, сохраняет обЪект, логинится и отправляет письмо на почту
+
+            # В случае удачи, активирует нового пользователя флагом True,
+            # сохраняет обЪект, логинится и отправляет письмо на почту
             user.email_verify = True
             user.save()
             login(request, user)
@@ -99,7 +102,9 @@ class UserPasswordResetView(PasswordContextMixin, FormView):
         user_object: object = User.objects.get(email=user_email)
         send_mail(
             subject='Центр медицинской диагностики - Восстановление пароля',
-            message=f'Вас приветствует администрация Центра медицинской диагностики.\nВы запросили новый пароль для {user_email}.\nВаш новый пароль: {new_password}\nС уважением администрация Центра медицинской диагностики.',
+            message=f'Вас приветствует администрация Центра медицинской диагностики.'
+                    f'\nВы запросили новый пароль для {user_email}.\nВаш новый пароль: {new_password}'
+                    f'\nС уважением администрация Центра медицинской диагностики.',
             from_email=settings.EMAIL_HOST_USER,
             recipient_list=[user_email]
         )

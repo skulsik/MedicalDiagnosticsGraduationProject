@@ -39,7 +39,8 @@ def parser_register_update_form(form_as_p):
     for line in form_list:
         # Текст - название формы
         if '<label' in line and 'Очистить' not in line and 'Удалить:' not in line:
-            line_modified = f'<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">' \
+            line_modified = f'<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label' \
+                            f'form-input-icon">' \
                             f'<div class="text-left">{line}</div>'
             form_list_modified.append(line_modified)
 
@@ -66,7 +67,8 @@ def parser_register_update_form(form_as_p):
 
         # Лечит баг
         if 'Изменить:' in line:
-            line_modified = f'<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">' \
+            line_modified = f'<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label' \
+                            f'form-input-icon">' \
                             f'<div class="text-left"><label for="avatar-clear_id">Изменить аватар</label></div>'
             form_list_modified.append(line_modified)
 

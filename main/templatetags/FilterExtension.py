@@ -23,11 +23,13 @@ def login_form(form_as_p):
     form_string: str = """
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                     <i class="fa fa-envelope-o"></i>
-                    <input type="text" name="username" class="mdl-textfield__input" placeholder="Email" id="login-email" autocapitalize="none" autocomplete="username" maxlength="254" required>
+                    <input type="text" name="username" class="mdl-textfield__input" placeholder="Email"
+                    id="login-email" autocapitalize="none" autocomplete="username" maxlength="254" required>
                 </div>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                     <i class="fa fa-key"></i>
-                    <input type="password" name="password" class="mdl-textfield__input" placeholder="Password" id="login-password" required>
+                    <input type="password" name="password" class="mdl-textfield__input" placeholder="Password"
+                    id="login-password" required>
                 </div>
     """
     return mark_safe(form_string)
@@ -43,15 +45,18 @@ def registration_form(form_as_p):
     form_string: str = """
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                     <i class="fa fa-envelope-o"></i>
-                    <input type="email" name="email" maxlength="254" autofocus class="mdl-textfield__input" placeholder="Почта" required id="id_email">
+                    <input type="email" name="email" maxlength="254" autofocus class="mdl-textfield__input"
+                    placeholder="Почта" required id="id_email">
                 </div>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                     <i class="fa fa-key"></i>
-                    <input type="password" name="password1" autocomplete="new-password" class="mdl-textfield__input" placeholder="Пароль" required id="id_password1">
+                    <input type="password" name="password1" autocomplete="new-password" class="mdl-textfield__input"
+                    placeholder="Пароль" required id="id_password1">
                 </div>
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                     <i class="fa fa-key"></i>
-                    <input type="password" name="password2" autocomplete="new-password" class="mdl-textfield__input" placeholder="Повторите пароль" required id="id_password2">
+                    <input type="password" name="password2" autocomplete="new-password" class="mdl-textfield__input"
+                    placeholder="Повторите пароль" required id="id_password2">
                 </div>
                 <span style="text-align: left">
                     <ul>
@@ -115,7 +120,8 @@ def reset_password_form(form_as_p):
     form_string: str = """
                 <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label form-input-icon">
                     <i class="fa fa-envelope-o"></i>
-                    <input type="email" name="email" class="mdl-textfield__input" autocomplete="email" maxlength="254" required id="id_email">
+                    <input type="email" name="email" class="mdl-textfield__input" autocomplete="email" maxlength="254"
+                    required id="id_email">
                 </div>
     """
     return mark_safe(form_string)

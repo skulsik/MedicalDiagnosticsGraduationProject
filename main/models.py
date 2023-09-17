@@ -1,5 +1,3 @@
-import datetime
-
 from django.db import models
 from config import settings
 from services.utils import NULLABLE
