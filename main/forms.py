@@ -20,11 +20,14 @@ class AppointmentForm(FormStyleMixin, forms.ModelForm):
         date = self.cleaned_data['date']
         time = self.cleaned_data['time']
         doctor = self.cleaned_data['doctor']
-        doctor_bd = Appointment.objects.filter(doctor=doctor)\
-                    & Appointment.objects.filter(date=date)\
-                    & Appointment.objects.filter(time=time)
+        doctor_bd = \
+            Appointment.objects.filter(doctor=doctor)\
+            & Appointment.objects.filter(date=date)\
+            & Appointment.objects.filter(time=time)
         if doctor_bd:
-            raise ValidationError('Извините, запись на данное время уже существует!')
+            raise ValidationError(
+                'Извините, запись на данное время уже существует!'
+            )
 
         return doctor
 

@@ -1,7 +1,9 @@
 from django.urls import path
 
 from main.apps import MainConfig
-from main.views import *
+from main.views import HomeView, RightsContentView, AppointmentCreateView, AppointmentUserListView,\
+    AppointmentListView, AppointmentDoctorListView, UserProfileView, AppointmentDeleteView, FeedbackCreateView,\
+    FeedbackUserListView, FeedbackListView, FeedbackDeleteView
 
 app_name = MainConfig.name
 

@@ -1,6 +1,5 @@
 from django.contrib import admin
-
-from main.models import *
+from main.models import Department, Post, Doctor, Patient, Appointment, Time, Feedback
 
 
 @admin.register(Department)
