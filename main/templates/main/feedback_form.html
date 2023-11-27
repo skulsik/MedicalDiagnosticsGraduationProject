@@ -1,0 +1,58 @@
+{% extends 'main/base.html' %}
+{% load FilterExtension %}
+{% block content %}
+
+{% if user.is_authenticated %}
+{% if user.role_status == 'PATIENT' %}
+
+<!-- Start page Title Section -->
+    <div class="page-ttl">
+        <div class="layer-stretch">
+            <div class="page-ttl-container">
+                <h1>Оставьте свой отзыв о клинике или враче</h1>
+                <p><a href="{% url 'main:home' %}">Главная</a> &#8594; <span>Оставить отзыв</span></p>
+            </div>
+        </div>
+    </div>
+    <div id="profile-page" class="layer-stretch">
+
+        <div class="layer-wrapper">
+            <div class="theme-material-card text-center">
+                <form method="post">
+                <div class="row">
+                    <div class="col-md-2">
+                    </div>
+                    <div class="col-md-8 ">
+
+                        <h3>
+                            {% csrf_token %}
+                            {% for field in form %}
+                            <div>
+                                {{ field.label_tag }}
+                                {{ field|feedback_form }}<BR>
+                                {% if field.errors %}
+                                {{ field.errors|striptags }}
+                                {% endif %}
+                            </div>
+                            {% endfor %}
+                        </h3>
+
+                    </div>
+                </div>
+                <div class="form-submit">
+                    <button type="submit" class="mdl-button mdl-js-button mdl-js-ripple-effect button button-primary">Сохранить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- End page Title Section -->
+{% endif %}
+
+{% else %}
+
+{% include 'main/404.html' %}
+
+{% endif %}
+
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends 'main/base.html' %}
+{% load FilterExtension %}
+{% block content %}
+
+{% if user.is_authenticated %}
+
+<!-- Start page Title Section -->
+    <div class="page-ttl">
+        <div class="layer-stretch">
+            <div class="page-ttl-container">
+                <h1>Опубликовать статью</h1>
+                <p><a href="{% url 'main:home' %}">Главная</a> &#8594; <span>Публикация статьи</span></p>
+            </div>
+        </div>
+    </div>
+    <div id="profile-page" class="layer-stretch">
+
+        <div class="layer-wrapper">
+            <div class="theme-material-card text-center">
+                <form method="post" enctype="multipart/form-data">
+                <div class="row">
+                    <div class="col-md-2">
+                    </div>
+                    <div class="col-md-8 ">
+
+                        <h3>
+                            {% csrf_token %}
+                            {% for field in form %}
+                            <div>
+                                {{ field.label_tag }}
+                                {{ field|feedback_form }}<BR>
+                                {% if field.errors %}
+                                {{ field.errors|striptags }}
+                                {% endif %}
+                            </div>
+                            {% endfor %}
+                        </h3>
+
+                    </div>
+                </div>
+                <div class="form-submit">
+                    <button type="submit" class="mdl-button mdl-js-button mdl-js-ripple-effect button button-primary">Опубликовать</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+{% else %}
+
+{% include 'main/404.html' %}
+
+{% endif %}
+
+{% endblock %}

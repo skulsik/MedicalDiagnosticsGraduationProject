@@ -1,0 +1,25 @@
+{% extends 'main/base.html' %}
+{% block content %}
+
+<!-- Start page Title Section -->
+    <div class="page-ttl">
+        <div class="layer-stretch">
+            <div class="page-ttl-container">
+                <h1>Регистрация на портале</h1>
+                <p><a href="{% url 'main:home' %}">Главная</a> &#8594; <span>Регистрация</span></p>
+            </div>
+        </div>
+    </div>
+<!-- End page Title Section -->
+<!-- Start Login Section -->
+    <div id="login-page" class="layer-stretch">
+        <div class="layer-wrapper">
+            <div class="form-container">
+                <h5>Регистрация прошла успешно!</h5>
+                Вам на почту отправлена ссылка, для подтверждения регистрации. Пожалуйста, проверьте почту!
+            </div>
+        </div>
+    </div>
+<!-- End Login Section -->
+
+{% endblock %}

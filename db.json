@@ -1,0 +1,3000 @@
+[
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2023-09-06T09:56:40.470Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "1",
+        "object_repr": "vashenko.a.v@yandex.ru",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2023-09-06T09:57:00.196Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "1",
+        "object_repr": "vashenko.a.v@yandex.ru",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"\\u0422\\u0435\\u043b\\u0435\\u0444\\u043e\\u043d\", \"\\u0421\\u0442\\u0440\\u0430\\u043d\\u0430\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2023-09-07T09:07:19.915Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "2",
+        "object_repr": "skulsik1@gmail.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2023-09-07T09:21:59.061Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "3",
+        "object_repr": "skulsik1@gmail.com",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2023-09-07T12:47:27.515Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "1",
+        "object_repr": "Отдел: Хирургия",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2023-09-07T12:47:51.858Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "2",
+        "object_repr": "Отдел: Реанимация",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2023-09-07T12:48:07.955Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "3",
+        "object_repr": "Отдел: Урология",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2023-09-07T12:48:34.727Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "4",
+        "object_repr": "Отдел: Гинекология",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2023-09-07T12:48:48.956Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "5",
+        "object_repr": "Отдел: Пульмонология",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2023-09-07T12:49:00.715Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "6",
+        "object_repr": "Отдел: Кардиология",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2023-09-07T12:49:15.362Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "7",
+        "object_repr": "Отдел: Гастроэнтерология",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2023-09-07T12:49:28.099Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "8",
+        "object_repr": "Отдел: Терапия",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2023-09-07T12:49:43.955Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "9",
+        "object_repr": "Отдел: Неврология",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2023-09-07T12:50:01.187Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "10",
+        "object_repr": "Отдел: Травматология",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2023-09-07T12:51:10.014Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "1",
+        "object_repr": "Должность: Главный врач. Отдел: Хирургия",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2023-09-07T12:51:21.918Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "2",
+        "object_repr": "Должность: Главный врач. Отдел: Реанимация",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2023-09-07T12:52:24.118Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "3",
+        "object_repr": "Должность: Врач-акушер-гинеколог. Отдел: Гинекология",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2023-09-07T12:53:14.829Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "4",
+        "object_repr": "Должность: Врач-детский кардиолог. Отдел: Кардиология",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2023-09-07T12:53:57.017Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "5",
+        "object_repr": "Должность: Врач-детский хирург. Отдел: Хирургия",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2023-09-07T12:54:42.757Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "6",
+        "object_repr": "Должность: Врач-кардиолог. Отдел: Кардиология",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2023-09-07T12:55:21.484Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "7",
+        "object_repr": "Должность: Врач-колопроктолог. Отдел: Урология",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2023-09-07T12:56:07.989Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "8",
+        "object_repr": "Должность: Врач-невролог. Отдел: Неврология",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2023-09-07T12:57:36.136Z",
+        "user": 1,
+        "content_type": 9,
+        "object_id": "11",
+        "object_repr": "Отдел: Педиатрия",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2023-09-07T12:57:55.024Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "9",
+        "object_repr": "Должность: Врач-педиатр. Отдел: Педиатрия",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2023-09-07T12:59:41.265Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "10",
+        "object_repr": "Должность: Врач-токсиколог. Отдел: Гастроэнтерология",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2023-09-07T13:04:54.760Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "Должность: Главный врач. Отдел: Хирургия",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2023-09-07T13:08:43.273Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "5",
+        "object_repr": "test@pochta.ru",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2023-09-07T13:09:01.090Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "Должность: Главный врач. Отдел: Хирургия",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0412\\u043b\\u0430\\u0434\\u0435\\u043b\\u0435\\u0446\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2023-09-08T13:18:19.386Z",
+        "user": 1,
+        "content_type": 10,
+        "object_id": "11",
+        "object_repr": "Должность: Санитар. Отдел: Реанимация",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2023-09-08T13:29:26.522Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "6",
+        "object_repr": "test1@pochta.ru",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2023-09-08T13:31:31.406Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "Должность: Главный врач. Отдел: Реанимация",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2023-09-08T13:41:20.579Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "7",
+        "object_repr": "test2@pochta.ru",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2023-09-08T13:43:36.847Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "3",
+        "object_repr": "Должность: Врач-детский хирург. Отдел: Хирургия",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2023-09-08T13:47:23.535Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "6",
+        "object_repr": "test1@pochta.ru",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Last name\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2023-09-08T13:47:42.864Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "5",
+        "object_repr": "test@pochta.ru",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Last name\", \"Email verify\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2023-09-08T13:49:03.405Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "8",
+        "object_repr": "test3@pochta.ru",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2023-09-08T13:51:24.671Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "4",
+        "object_repr": "Должность: Врач-акушер-гинеколог. Отдел: Гинекология",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2023-09-08T13:52:54.222Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "9",
+        "object_repr": "test4@pochta.ru",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2023-09-08T13:55:58.757Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "5",
+        "object_repr": "Должность: Врач-токсиколог. Отдел: Гастроэнтерология",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2023-09-08T13:58:39.764Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "10",
+        "object_repr": "test5@pochta.ru",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2023-09-08T14:01:16.212Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "6",
+        "object_repr": "Должность: Врач-колопроктолог. Отдел: Урология",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2023-09-08T14:04:27.780Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "11",
+        "object_repr": "test6@pochta.ru",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+        "action_time": "2023-09-08T14:06:54.875Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "7",
+        "object_repr": "Должность: Врач-невролог. Отдел: Неврология",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+        "action_time": "2023-09-08T14:09:21.122Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "12",
+        "object_repr": "test7@pochta.ru",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+        "action_time": "2023-09-08T14:10:10.977Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "8",
+        "object_repr": "Должность: Врач-педиатр. Отдел: Педиатрия",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+        "action_time": "2023-09-08T14:12:34.508Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "13",
+        "object_repr": "test8@pochta.ru",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+        "action_time": "2023-09-08T14:14:19.376Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "9",
+        "object_repr": "Должность: Врач-детский хирург. Отдел: Хирургия",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+        "action_time": "2023-09-08T14:15:58.084Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "9",
+        "object_repr": "Должность: Врач-детский кардиолог. Отдел: Кардиология",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u043e\\u043b\\u0436\\u043d\\u043e\\u0441\\u0442\\u044c\", \"\\u041d\\u0430\\u0433\\u0440\\u0430\\u0434\\u044b\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+        "action_time": "2023-09-08T14:17:38.987Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "14",
+        "object_repr": "test9@pochta.ru",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+        "action_time": "2023-09-08T14:19:05.685Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "10",
+        "object_repr": "Должность: Врач-детский хирург. Отдел: Хирургия",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+        "action_time": "2023-09-08T14:19:42.796Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "10",
+        "object_repr": "Должность: Врач-акушер-гинеколог. Отдел: Гинекология",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u043e\\u043b\\u0436\\u043d\\u043e\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+        "action_time": "2023-09-08T14:20:07.207Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "10",
+        "object_repr": "Должность: Врач-кардиолог. Отдел: Кардиология",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0414\\u043e\\u043b\\u0436\\u043d\\u043e\\u0441\\u0442\\u044c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+        "action_time": "2023-09-10T04:55:16.824Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "11",
+        "object_repr": "test6@pochta.ru",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0410\\u0432\\u0430\\u0442\\u0430\\u0440\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+        "action_time": "2023-09-10T05:56:01.972Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "4",
+        "object_repr": "skulsik1@gmail.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"First name\", \"Last name\", \"\\u0410\\u0432\\u0430\\u0442\\u0430\\u0440\", \"\\u0422\\u0435\\u043b\\u0435\\u0444\\u043e\\u043d\", \"\\u0421\\u0442\\u0440\\u0430\\u043d\\u0430\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+        "action_time": "2023-09-10T07:20:16.004Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "skulsik1@gmail.com",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+        "action_time": "2023-09-10T12:43:04.794Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "5",
+        "object_repr": "vashenko.a.v@yandex.ru",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+        "action_time": "2023-09-10T13:17:49.885Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "4",
+        "object_repr": "skulsik1@gmail.com",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0413\\u0440\\u0443\\u043f\\u043f\\u0430 \\u043a\\u0440\\u043e\\u0432\\u0438\", \"\\u041f\\u043e\\u043b \\u043f\\u0430\\u0446\\u0438\\u0435\\u043d\\u0442\\u0430\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+        "action_time": "2023-09-11T06:24:39.961Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "4",
+        "object_repr": "patient1@pochta.ru",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0447\\u0442\\u0430\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+        "action_time": "2023-09-11T06:39:40.212Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "15",
+        "object_repr": "patient2@pochta.ru",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+        "action_time": "2023-09-11T07:04:40.422Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "7",
+        "object_repr": "patient2@pochta.ru",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+        "action_time": "2023-09-13T07:06:29.799Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "1",
+        "object_repr": "08:00:00",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+        "action_time": "2023-09-13T07:08:21.372Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "1",
+        "object_repr": "08:00:00",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+        "action_time": "2023-09-13T07:10:21.071Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "2",
+        "object_repr": "08:00:00",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+        "action_time": "2023-09-13T07:10:57.832Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "3",
+        "object_repr": "09:00:00",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+        "action_time": "2023-09-13T07:11:16.975Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "4",
+        "object_repr": "10:00:00",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+        "action_time": "2023-09-13T07:11:31.975Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "5",
+        "object_repr": "11:00:00",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+        "action_time": "2023-09-13T07:11:37.658Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "6",
+        "object_repr": "12:00:00",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+        "action_time": "2023-09-13T07:11:45.094Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "7",
+        "object_repr": "13:00:00",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+        "action_time": "2023-09-13T07:11:49.590Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "8",
+        "object_repr": "14:00:00",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+        "action_time": "2023-09-13T07:11:53.567Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "9",
+        "object_repr": "15:00:00",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+        "action_time": "2023-09-13T07:11:57.523Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "10",
+        "object_repr": "16:00:00",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+        "action_time": "2023-09-13T07:12:01.763Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "11",
+        "object_repr": "17:00:00",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+        "action_time": "2023-09-13T07:12:05.972Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "12",
+        "object_repr": "18:00:00",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+        "action_time": "2023-09-13T07:12:09.984Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "13",
+        "object_repr": "19:00:00",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+        "action_time": "2023-09-13T07:12:14.047Z",
+        "user": 1,
+        "content_type": 12,
+        "object_id": "14",
+        "object_repr": "20:00:00",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+        "action_time": "2023-09-13T07:18:34.523Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "7",
+        "object_repr": "Должность: Врач-акушер-гинеколог. Отдел: Гинекология",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+        "action_time": "2023-09-13T07:18:34.525Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "6",
+        "object_repr": "Должность: Врач-невролог. Отдел: Неврология",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 78,
+    "fields": {
+        "action_time": "2023-09-13T07:18:34.526Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "5",
+        "object_repr": "Должность: Врач-детский хирург. Отдел: Хирургия",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+        "action_time": "2023-09-13T07:18:34.528Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "4",
+        "object_repr": "Должность: Врач-детский кардиолог. Отдел: Кардиология",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+        "action_time": "2023-09-13T07:18:34.529Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "3",
+        "object_repr": "Должность: Врач-колопроктолог. Отдел: Урология",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 81,
+    "fields": {
+        "action_time": "2023-09-13T07:43:04.343Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "1",
+        "object_repr": "Должность: Главный врач. Отдел: Хирургия",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 82,
+    "fields": {
+        "action_time": "2023-09-13T08:04:41.377Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "1",
+        "object_repr": "Должность: Главный врач. Отдел: Хирургия",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0432\\u0440\\u0430\\u0447\\u0430, True - \\u043c\\u043e\\u0436\\u043d\\u043e \\u0437\\u0430\\u043f\\u0438\\u0441\\u0430\\u0442\\u044c\\u0441\\u044f \\u043d\\u0430 \\u043f\\u0440\\u0435\\u043c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 83,
+    "fields": {
+        "action_time": "2023-09-13T08:04:48.472Z",
+        "user": 1,
+        "content_type": 8,
+        "object_id": "2",
+        "object_repr": "Должность: Главный врач. Отдел: Реанимация",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0421\\u0442\\u0430\\u0442\\u0443\\u0441 \\u0432\\u0440\\u0430\\u0447\\u0430, True - \\u043c\\u043e\\u0436\\u043d\\u043e \\u0437\\u0430\\u043f\\u0438\\u0441\\u0430\\u0442\\u044c\\u0441\\u044f \\u043d\\u0430 \\u043f\\u0440\\u0435\\u043c\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 84,
+    "fields": {
+        "action_time": "2023-09-13T14:29:54.010Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "4",
+        "object_repr": "Должность: Врач-детский хирург. Отдел: Хирургия",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 85,
+    "fields": {
+        "action_time": "2023-09-14T04:33:30.643Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "17",
+        "object_repr": "patient3@pochta.ru",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 86,
+    "fields": {
+        "action_time": "2023-09-14T04:34:49.868Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "18",
+        "object_repr": "patient4@pochta.ru",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 87,
+    "fields": {
+        "action_time": "2023-09-14T04:36:54.254Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "19",
+        "object_repr": "patient5@pochta.ru",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 88,
+    "fields": {
+        "action_time": "2023-09-14T04:38:09.208Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "20",
+        "object_repr": "patient6@pochta.ru",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 89,
+    "fields": {
+        "action_time": "2023-09-14T05:08:00.758Z",
+        "user": 1,
+        "content_type": 11,
+        "object_id": "49",
+        "object_repr": "Должность: Врач-детский хирург. Отдел: Хирургия",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 90,
+    "fields": {
+        "action_time": "2023-09-14T05:25:52.794Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "8",
+        "object_repr": "test3@pochta.ru",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 91,
+    "fields": {
+        "action_time": "2023-09-14T05:27:01.614Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "9",
+        "object_repr": "test4@pochta.ru",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 92,
+    "fields": {
+        "action_time": "2023-09-14T05:27:55.261Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "8",
+        "object_repr": "patient3@pochta.ru",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0412\\u043b\\u0430\\u0434\\u0435\\u043b\\u0435\\u0446\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 93,
+    "fields": {
+        "action_time": "2023-09-14T05:28:58.933Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "9",
+        "object_repr": "patient5@pochta.ru",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u043b \\u043f\\u0430\\u0446\\u0438\\u0435\\u043d\\u0442\\u0430\", \"\\u0412\\u043b\\u0430\\u0434\\u0435\\u043b\\u0435\\u0446\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 94,
+    "fields": {
+        "action_time": "2023-09-14T05:29:24.761Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "9",
+        "object_repr": "patient4@pochta.ru",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0412\\u043b\\u0430\\u0434\\u0435\\u043b\\u0435\\u0446\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 95,
+    "fields": {
+        "action_time": "2023-09-14T05:30:57.514Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "10",
+        "object_repr": "patient5@pochta.ru",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 96,
+    "fields": {
+        "action_time": "2023-09-14T05:32:53.889Z",
+        "user": 1,
+        "content_type": 7,
+        "object_id": "11",
+        "object_repr": "patient6@pochta.ru",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 97,
+    "fields": {
+        "action_time": "2023-09-14T07:04:13.722Z",
+        "user": 1,
+        "content_type": 13,
+        "object_id": "1",
+        "object_repr": "vashenko.a.v@yandex.ru",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 98,
+    "fields": {
+        "action_time": "2023-09-14T13:51:19.729Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "ВОЗ объявит подсластитель аспартам возможным канцерогеном",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0438\\u0437\\u043d\\u0430\\u043a \\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u0430\\u0446\\u0438\\u0438\", \"\\u0412\\u043b\\u0430\\u0434\\u0435\\u043b\\u0435\\u0446\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 99,
+    "fields": {
+        "action_time": "2023-09-14T14:10:58.330Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "1",
+        "object_repr": "ВОЗ объявит подсластитель аспартам возможным канцерогеном",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 100,
+    "fields": {
+        "action_time": "2023-09-14T14:14:11.113Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "3",
+        "object_repr": "ВОЗ объявит подсластитель аспартам возможным канцерогеном",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 101,
+    "fields": {
+        "action_time": "2023-09-14T14:14:11.116Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "2",
+        "object_repr": "ВОЗ объявит подсластитель аспартам возможным канцерогеном",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 102,
+    "fields": {
+        "action_time": "2023-09-14T14:16:09.180Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "4",
+        "object_repr": "ВОЗ объявит подсластитель аспартам возможным канцерогеном",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 103,
+    "fields": {
+        "action_time": "2023-09-14T14:16:45.624Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "5",
+        "object_repr": "ВОЗ объявит подсластитель аспартам возможным канцерогеном",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0438\\u0437\\u043d\\u0430\\u043a \\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u0430\\u0446\\u0438\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 104,
+    "fields": {
+        "action_time": "2023-09-14T15:00:52.361Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "6",
+        "object_repr": "Врачи рассказали, как победить хронический простатит",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u0418\\u0437\\u043e\\u0431\\u0440\\u0430\\u0436\\u0435\\u043d\\u0438\\u0435\", \"\\u041f\\u0440\\u0438\\u0437\\u043d\\u0430\\u043a \\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u0430\\u0446\\u0438\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 105,
+    "fields": {
+        "action_time": "2023-09-14T15:20:39.357Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "6",
+        "object_repr": "Врачи рассказали, как победить хронический простатит",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0438\\u0437\\u043d\\u0430\\u043a \\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u0430\\u0446\\u0438\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 106,
+    "fields": {
+        "action_time": "2023-09-14T15:36:46.664Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "10",
+        "object_repr": "Антибиотики детям стали давать чаще на 46% за 20 лет",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0438\\u0437\\u043d\\u0430\\u043a \\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u0430\\u0446\\u0438\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 107,
+    "fields": {
+        "action_time": "2023-09-14T15:36:51.703Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "9",
+        "object_repr": "Детский иммунитет: как защитить от вирусов",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0438\\u0437\\u043d\\u0430\\u043a \\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u0430\\u0446\\u0438\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 108,
+    "fields": {
+        "action_time": "2023-09-14T15:36:55.506Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "8",
+        "object_repr": "Респираторные заболевания вновь набирают обороты",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0438\\u0437\\u043d\\u0430\\u043a \\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u0430\\u0446\\u0438\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 109,
+    "fields": {
+        "action_time": "2023-09-14T15:36:59.351Z",
+        "user": 1,
+        "content_type": 14,
+        "object_id": "7",
+        "object_repr": "Запрет ментоловых сигарет может спасти сотни тысячей жизней",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u0440\\u0438\\u0437\\u043d\\u0430\\u043a \\u043f\\u0443\\u0431\\u043b\\u0438\\u043a\\u0430\\u0446\\u0438\\u0438\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 110,
+    "fields": {
+        "action_time": "2023-09-16T05:55:07.709Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "1",
+        "object_repr": "admin@pochta.ru",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0447\\u0442\\u0430\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 111,
+    "fields": {
+        "action_time": "2023-09-16T05:55:41.436Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "1",
+        "object_repr": "admin@pochta.ru",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Password\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 112,
+    "fields": {
+        "action_time": "2023-09-16T06:02:38.196Z",
+        "user": 1,
+        "content_type": 6,
+        "object_id": "1",
+        "object_repr": "vashenko.a.v@yandex.ru",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"\\u041f\\u043e\\u0447\\u0442\\u0430\"]}}]"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "20fd436g1kjwkr1yydspc0mggu00t9er",
+    "fields": {
+        "session_data": ".eJxVjEEOwiAQRe_C2hAGBIpL9z0DmWFAqoYmpV0Z765NutDtf-_9l4i4rTVuPS9xYnER4MTpdyRMj9x2wndst1mmua3LRHJX5EG7HGfOz-vh_h1U7PVb52LAkaIByCZU2qAmLipACgjFe3blrFPSQwmmKMxkLATwihkMW5XF-wMetTh6:1qfauX:wtr0pvX41Hn91qTME4gmdV82ddaHYVF-0om8Be-geD4",
+        "expire_date": "2023-09-25T07:00:41.971Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "4e9ooz2655kva9jwan5v2n9ywqiqbfi9",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSFAOzxcuvcbyAxDpWogKe3K-O_apAvd3nPOfYmI21ri1vMSZxZnocXpdyNMj1x3wHestyZTq-syk9wVedAur43z83K4fwcFe_nW1qOZEEIg0gwusGXnEluwyo0qZdCURmV4GpDAgKHsPAfn1WAHq7IS7w_j1jd5:1qhOHr:9uBK0lSxZ4H4hzEmND2pqO6Cdz7Oe4fmClv_3hxy9K0",
+        "expire_date": "2023-09-30T05:56:11.398Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "s2xv02latzg97vkks00udpoym589f21v",
+    "fields": {
+        "session_data": ".eJxVjMsOwiAQRf-FtSFAOzxcuvcbyAxDpWogKe3K-O_apAvd3nPOfYmI21ri1vMSZxZnob04_Y6E6ZHrTviO9dZkanVdZpK7Ig_a5bVxfl4O9--gYC_f2no0E0IIRJrBBbbsXGILVrlRpQya0qgMTwMSGDCUnefgvBrsYFVW4v0BDAU3sQ:1qh1lW:2fT7pqwCUJTHSCwJNzH9fEVC-UpNfAOmB-zVEZfG0Po",
+        "expire_date": "2023-09-29T05:53:18.565Z"
+    }
+},
+{
+    "model": "users.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$1JhqZa0bcxYHKlcRiU2LC5$9n3RZGbui9pwYcSXfNpFVpRhlH2l2jJNtb/zf38l7QA=",
+        "last_login": "2023-09-16T05:56:11Z",
+        "is_superuser": true,
+        "first_name": "Алексей",
+        "last_name": "Ващенко",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-09-05T09:00:36Z",
+        "email": "vashenko.a.v@yandex.ru",
+        "avatar": "users/low-angle-portrait-of-a-young-male-wearing-a-gray-t-shirt-with-a-jacket-and-posing_Z0Dp5yx.jpg",
+        "phone": "+79528958758",
+        "country": "Россия",
+        "email_verify": false,
+        "role_status": "PATIENT",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 4,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$1JhqZa0bcxYHKlcRiU2LC5$9n3RZGbui9pwYcSXfNpFVpRhlH2l2jJNtb/zf38l7QA=",
+        "last_login": "2023-09-14T15:25:47.681Z",
+        "is_superuser": false,
+        "first_name": "Иван",
+        "last_name": "Булкин",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-09-07T09:22:24Z",
+        "email": "patient1@pochta.ru",
+        "avatar": "users/waist-up-portrait-of-happy-calm-guy-with-beard-in-striped-pullover-smiling-broadly_I1jLmJ4.jpg",
+        "phone": "+70005552121",
+        "country": "Россия",
+        "email_verify": true,
+        "role_status": "PATIENT",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 5,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$1JhqZa0bcxYHKlcRiU2LC5$9n3RZGbui9pwYcSXfNpFVpRhlH2l2jJNtb/zf38l7QA=",
+        "last_login": "2023-09-07T13:05:50Z",
+        "is_superuser": false,
+        "first_name": "Фёдр",
+        "last_name": "Степанченко",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-09-07T13:05:44Z",
+        "email": "test@pochta.ru",
+        "avatar": "users/close-up-on-health-worker_1.jpg",
+        "phone": "+70007346375",
+        "country": "Россия",
+        "email_verify": true,
+        "role_status": "DOCTOR",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 6,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$1JhqZa0bcxYHKlcRiU2LC5$9n3RZGbui9pwYcSXfNpFVpRhlH2l2jJNtb/zf38l7QA=",
+        "last_login": "2023-09-08T13:27:47Z",
+        "is_superuser": false,
+        "first_name": "Виниамин",
+        "last_name": "Зубров",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-09-08T13:27:38Z",
+        "email": "test1@pochta.ru",
+        "avatar": "users/close-up-on-health-worker.jpg",
+        "phone": "+70003645678",
+        "country": "Россия",
+        "email_verify": true,
+        "role_status": "DOCTOR",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 7,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$1JhqZa0bcxYHKlcRiU2LC5$9n3RZGbui9pwYcSXfNpFVpRhlH2l2jJNtb/zf38l7QA=",
+        "last_login": "2023-09-14T05:33:23.617Z",
+        "is_superuser": false,
+        "first_name": "Павел",
+        "last_name": "Костоломов",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-09-08T13:39:43Z",
+        "email": "test2@pochta.ru",
+        "avatar": "users/medium-shot-doctor-filling-document.jpg",
+        "phone": "+70008934678",
+        "country": "Россия",
+        "email_verify": true,
+        "role_status": "DOCTOR",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 8,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$1JhqZa0bcxYHKlcRiU2LC5$9n3RZGbui9pwYcSXfNpFVpRhlH2l2jJNtb/zf38l7QA=",
+        "last_login": "2023-09-15T05:50:39.448Z",
+        "is_superuser": false,
+        "first_name": "Станислав",
+        "last_name": "Стоцкий",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-09-08T13:47:44Z",
+        "email": "test3@pochta.ru",
+        "avatar": "users/portrait-of-professional-medical-worker-posing-for-a-picture-with-arms-folded.jpg",
+        "phone": "+70003458257",
+        "country": "Россия",
+        "email_verify": true,
+        "role_status": "DOCTOR",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 9,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$1JhqZa0bcxYHKlcRiU2LC5$9n3RZGbui9pwYcSXfNpFVpRhlH2l2jJNtb/zf38l7QA=",
+        "last_login": "2023-09-08T13:51:47Z",
+        "is_superuser": false,
+        "first_name": "Светлана",
+        "last_name": "Горб",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-09-08T13:51:42Z",
+        "email": "test4@pochta.ru",
+        "avatar": "users/beautiful-young-female-doctor-looking-at-camera-in-the-office.jpg",
+        "phone": "+70005646733",
+        "country": "Россия",
+        "email_verify": true,
+        "role_status": "DOCTOR",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 10,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$1JhqZa0bcxYHKlcRiU2LC5$9n3RZGbui9pwYcSXfNpFVpRhlH2l2jJNtb/zf38l7QA=",
+        "last_login": "2023-09-14T15:33:21.054Z",
+        "is_superuser": false,
+        "first_name": "Анжелика",
+        "last_name": "Борман",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-09-08T13:56:33Z",
+        "email": "test5@pochta.ru",
+        "avatar": "users/female-doctor-at-hospital-with-stethoscope.jpg",
+        "phone": "+70006483261",
+        "country": "Белоруссия",
+        "email_verify": true,
+        "role_status": "DOCTOR",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 11,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$1JhqZa0bcxYHKlcRiU2LC5$9n3RZGbui9pwYcSXfNpFVpRhlH2l2jJNtb/zf38l7QA=",
+        "last_login": "2023-09-08T14:02:01Z",
+        "is_superuser": false,
+        "first_name": "Фибваха",
+        "last_name": "Набия",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-09-08T14:01:56Z",
+        "email": "test6@pochta.ru",
+        "avatar": "users/female-doctor-with-tablet-and-stethoscope.jpg",
+        "phone": "+70008764865",
+        "country": "Нигера",
+        "email_verify": true,
+        "role_status": "DOCTOR",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 12,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$1JhqZa0bcxYHKlcRiU2LC5$9n3RZGbui9pwYcSXfNpFVpRhlH2l2jJNtb/zf38l7QA=",
+        "last_login": "2023-09-14T15:30:00.914Z",
+        "is_superuser": false,
+        "first_name": "Антонина",
+        "last_name": "Кирилова",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-09-08T14:07:23Z",
+        "email": "test7@pochta.ru",
+        "avatar": "users/portrait-of-a-doctor.jpg",
+        "phone": "+70006754847",
+        "country": "Сербия",
+        "email_verify": true,
+        "role_status": "DOCTOR",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 13,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$1JhqZa0bcxYHKlcRiU2LC5$9n3RZGbui9pwYcSXfNpFVpRhlH2l2jJNtb/zf38l7QA=",
+        "last_login": "2023-09-08T14:10:33Z",
+        "is_superuser": false,
+        "first_name": "Анастасия",
+        "last_name": "Панченко",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-09-08T14:10:24Z",
+        "email": "test8@pochta.ru",
+        "avatar": "users/woman-doctor-wearing-lab-robe-with-stethoscope-isolated.jpg",
+        "phone": "+70008886565",
+        "country": "Белоруссия",
+        "email_verify": true,
+        "role_status": "DOCTOR",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 14,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$1JhqZa0bcxYHKlcRiU2LC5$9n3RZGbui9pwYcSXfNpFVpRhlH2l2jJNtb/zf38l7QA=",
+        "last_login": "2023-09-08T14:16:18Z",
+        "is_superuser": false,
+        "first_name": "Алефтина",
+        "last_name": "Гетз",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-09-08T14:16:12Z",
+        "email": "test9@pochta.ru",
+        "avatar": "users/young-beautiful-successful-female-doctor-with-stethoscope-portrait.jpg",
+        "phone": "+70007778989",
+        "country": "Германия",
+        "email_verify": true,
+        "role_status": "DOCTOR",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 15,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$1JhqZa0bcxYHKlcRiU2LC5$9n3RZGbui9pwYcSXfNpFVpRhlH2l2jJNtb/zf38l7QA=",
+        "last_login": "2023-09-14T08:24:20.719Z",
+        "is_superuser": false,
+        "first_name": "Константин",
+        "last_name": "Копчиков",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-09-11T06:37:58Z",
+        "email": "patient2@pochta.ru",
+        "avatar": "users/front-view-of-man-giving-thumbs-up_9RlsFX1.jpg",
+        "phone": "+70009892222",
+        "country": "Россия",
+        "email_verify": true,
+        "role_status": "PATIENT",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 16,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$KNeBpS8n5DckshOJyGqusx$cJWRRRqckIjysKBNPZrd/K819GyBSIaqFonbKH4NCJU=",
+        "last_login": "2023-09-11T07:01:35.747Z",
+        "is_superuser": false,
+        "first_name": "",
+        "last_name": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-09-11T07:00:14.900Z",
+        "email": "skulsik1@gmail.com",
+        "avatar": "",
+        "phone": null,
+        "country": null,
+        "email_verify": true,
+        "role_status": "PATIENT",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 17,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$1JhqZa0bcxYHKlcRiU2LC5$9n3RZGbui9pwYcSXfNpFVpRhlH2l2jJNtb/zf38l7QA=",
+        "last_login": "2023-09-14T15:20:49.106Z",
+        "is_superuser": false,
+        "first_name": "Семен",
+        "last_name": "Слепаков",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-09-14T04:31:42Z",
+        "email": "patient3@pochta.ru",
+        "avatar": "users/designer-working-on-3d-model.jpg",
+        "phone": "+70009991234",
+        "country": "Россия",
+        "email_verify": true,
+        "role_status": "PATIENT",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 18,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$1JhqZa0bcxYHKlcRiU2LC5$9n3RZGbui9pwYcSXfNpFVpRhlH2l2jJNtb/zf38l7QA=",
+        "last_login": "2023-09-15T05:53:18.563Z",
+        "is_superuser": false,
+        "first_name": "Мария",
+        "last_name": "Кошкина",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-09-14T04:33:30Z",
+        "email": "patient4@pochta.ru",
+        "avatar": "users/portrait-of-beautiful-blond-woman-with-trendy-hairstyle.jpg",
+        "phone": "+70005646739",
+        "country": "Сербия",
+        "email_verify": true,
+        "role_status": "PATIENT",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 19,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$1JhqZa0bcxYHKlcRiU2LC5$9n3RZGbui9pwYcSXfNpFVpRhlH2l2jJNtb/zf38l7QA=",
+        "last_login": "2023-09-14T08:29:05.403Z",
+        "is_superuser": false,
+        "first_name": "Светлана",
+        "last_name": "Гуччи",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-09-14T04:34:49Z",
+        "email": "patient5@pochta.ru",
+        "avatar": "users/beautiful-woman.jpg",
+        "phone": "+70006665555",
+        "country": "Россия",
+        "email_verify": true,
+        "role_status": "PATIENT",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "users.user",
+    "pk": 20,
+    "fields": {
+        "password": "pbkdf2_sha256$600000$1JhqZa0bcxYHKlcRiU2LC5$9n3RZGbui9pwYcSXfNpFVpRhlH2l2jJNtb/zf38l7QA=",
+        "last_login": "2023-09-14T08:30:30.098Z",
+        "is_superuser": false,
+        "first_name": "Анна",
+        "last_name": "Стоцкая",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2023-09-14T04:36:54Z",
+        "email": "patient6@pochta.ru",
+        "avatar": "users/medium-shot-beautiful-woman-at-work.jpg",
+        "phone": "+78882221111",
+        "country": "Россия",
+        "email_verify": true,
+        "role_status": "PATIENT",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "main.department",
+    "pk": 1,
+    "fields": {
+        "name": "Хирургия"
+    }
+},
+{
+    "model": "main.department",
+    "pk": 2,
+    "fields": {
+        "name": "Реанимация"
+    }
+},
+{
+    "model": "main.department",
+    "pk": 3,
+    "fields": {
+        "name": "Урология"
+    }
+},
+{
+    "model": "main.department",
+    "pk": 4,
+    "fields": {
+        "name": "Гинекология"
+    }
+},
+{
+    "model": "main.department",
+    "pk": 5,
+    "fields": {
+        "name": "Пульмонология"
+    }
+},
+{
+    "model": "main.department",
+    "pk": 6,
+    "fields": {
+        "name": "Кардиология"
+    }
+},
+{
+    "model": "main.department",
+    "pk": 7,
+    "fields": {
+        "name": "Гастроэнтерология"
+    }
+},
+{
+    "model": "main.department",
+    "pk": 8,
+    "fields": {
+        "name": "Терапия"
+    }
+},
+{
+    "model": "main.department",
+    "pk": 9,
+    "fields": {
+        "name": "Неврология"
+    }
+},
+{
+    "model": "main.department",
+    "pk": 10,
+    "fields": {
+        "name": "Травматология"
+    }
+},
+{
+    "model": "main.department",
+    "pk": 11,
+    "fields": {
+        "name": "Педиатрия"
+    }
+},
+{
+    "model": "main.post",
+    "pk": 1,
+    "fields": {
+        "name": "Главный врач",
+        "department": 1
+    }
+},
+{
+    "model": "main.post",
+    "pk": 2,
+    "fields": {
+        "name": "Главный врач",
+        "department": 2
+    }
+},
+{
+    "model": "main.post",
+    "pk": 3,
+    "fields": {
+        "name": "Врач-акушер-гинеколог",
+        "department": 4
+    }
+},
+{
+    "model": "main.post",
+    "pk": 4,
+    "fields": {
+        "name": "Врач-детский кардиолог",
+        "department": 6
+    }
+},
+{
+    "model": "main.post",
+    "pk": 5,
+    "fields": {
+        "name": "Врач-детский хирург",
+        "department": 1
+    }
+},
+{
+    "model": "main.post",
+    "pk": 6,
+    "fields": {
+        "name": "Врач-кардиолог",
+        "department": 6
+    }
+},
+{
+    "model": "main.post",
+    "pk": 7,
+    "fields": {
+        "name": "Врач-колопроктолог",
+        "department": 3
+    }
+},
+{
+    "model": "main.post",
+    "pk": 8,
+    "fields": {
+        "name": "Врач-невролог",
+        "department": 9
+    }
+},
+{
+    "model": "main.post",
+    "pk": 9,
+    "fields": {
+        "name": "Врач-педиатр",
+        "department": 11
+    }
+},
+{
+    "model": "main.post",
+    "pk": 10,
+    "fields": {
+        "name": "Врач-токсиколог",
+        "department": 7
+    }
+},
+{
+    "model": "main.post",
+    "pk": 11,
+    "fields": {
+        "name": "Санитар",
+        "department": 2
+    }
+},
+{
+    "model": "main.doctor",
+    "pk": 1,
+    "fields": {
+        "post": 1,
+        "education": "СибГМУ, кандидат хирургических наук",
+        "awards": "Операция на мозге без инструмента",
+        "experience": "2001-09-07",
+        "owner": 5,
+        "status_appointment": false
+    }
+},
+{
+    "model": "main.doctor",
+    "pk": 2,
+    "fields": {
+        "post": 2,
+        "education": "МГТУ",
+        "awards": "Лучший глав врач россии",
+        "experience": "2006-02-21",
+        "owner": 6,
+        "status_appointment": false
+    }
+},
+{
+    "model": "main.doctor",
+    "pk": 3,
+    "fields": {
+        "post": 5,
+        "education": "Курсы врача",
+        "awards": "Первое место за 100 метровку",
+        "experience": "2020-09-08",
+        "owner": 7,
+        "status_appointment": true
+    }
+},
+{
+    "model": "main.doctor",
+    "pk": 4,
+    "fields": {
+        "post": 3,
+        "education": "Высшая школа гинекологии",
+        "awards": null,
+        "experience": "2015-05-12",
+        "owner": 8,
+        "status_appointment": true
+    }
+},
+{
+    "model": "main.doctor",
+    "pk": 5,
+    "fields": {
+        "post": 10,
+        "education": "МГткрУ",
+        "awards": "Врач года нашего центра",
+        "experience": "2008-09-14",
+        "owner": 9,
+        "status_appointment": true
+    }
+},
+{
+    "model": "main.doctor",
+    "pk": 6,
+    "fields": {
+        "post": 7,
+        "education": "БГТУ",
+        "awards": "Первое место за скорость проведения колоноскопии",
+        "experience": "2012-01-29",
+        "owner": 10,
+        "status_appointment": true
+    }
+},
+{
+    "model": "main.doctor",
+    "pk": 7,
+    "fields": {
+        "post": 8,
+        "education": "Психо неврологический техникум",
+        "awards": null,
+        "experience": "2019-09-23",
+        "owner": 11,
+        "status_appointment": true
+    }
+},
+{
+    "model": "main.doctor",
+    "pk": 8,
+    "fields": {
+        "post": 9,
+        "education": "Онлайн курсы",
+        "awards": null,
+        "experience": "2002-02-02",
+        "owner": 12,
+        "status_appointment": true
+    }
+},
+{
+    "model": "main.doctor",
+    "pk": 9,
+    "fields": {
+        "post": 4,
+        "education": "МГМУ",
+        "awards": "Кандидат наук НИИ кардеологии",
+        "experience": "2015-07-10",
+        "owner": 13,
+        "status_appointment": true
+    }
+},
+{
+    "model": "main.doctor",
+    "pk": 10,
+    "fields": {
+        "post": 6,
+        "education": "ETRGU",
+        "awards": "FGF, FGTH",
+        "experience": "2021-09-10",
+        "owner": 14,
+        "status_appointment": true
+    }
+},
+{
+    "model": "main.patient",
+    "pk": 4,
+    "fields": {
+        "birthday": "1986-03-15",
+        "address": "Бали",
+        "blood_type": "A(||) Rh-",
+        "gender": "мужчина",
+        "place_of_work": "Прогер",
+        "hobbies": "Стройка",
+        "discount_status": 0,
+        "owner": 4
+    }
+},
+{
+    "model": "main.patient",
+    "pk": 5,
+    "fields": {
+        "birthday": "1986-03-15",
+        "address": "Новосибирск",
+        "blood_type": "A(||) Rh-",
+        "gender": "мужчина",
+        "place_of_work": "МИКРАН",
+        "hobbies": "Квадракоптеры",
+        "discount_status": 60,
+        "owner": 1
+    }
+},
+{
+    "model": "main.patient",
+    "pk": 6,
+    "fields": {
+        "birthday": null,
+        "address": null,
+        "blood_type": "A(||) Rh-",
+        "gender": null,
+        "place_of_work": null,
+        "hobbies": null,
+        "discount_status": 0,
+        "owner": 16
+    }
+},
+{
+    "model": "main.patient",
+    "pk": 7,
+    "fields": {
+        "birthday": "1999-09-23",
+        "address": "Владивосток",
+        "blood_type": "B(|||) Rh+",
+        "gender": "мужчина",
+        "place_of_work": "Морячок",
+        "hobbies": "Катание на роликах",
+        "discount_status": 20,
+        "owner": 15
+    }
+},
+{
+    "model": "main.patient",
+    "pk": 8,
+    "fields": {
+        "birthday": "2000-11-03",
+        "address": "Томск",
+        "blood_type": "B(|||) Rh+",
+        "gender": "мужчина",
+        "place_of_work": "ТДСК",
+        "hobbies": "Бег",
+        "discount_status": 0,
+        "owner": 17
+    }
+},
+{
+    "model": "main.patient",
+    "pk": 9,
+    "fields": {
+        "birthday": "1980-09-14",
+        "address": "Омск",
+        "blood_type": "O(|) Rh-",
+        "gender": "женщина",
+        "place_of_work": "Омск бекон",
+        "hobbies": "Диета",
+        "discount_status": 0,
+        "owner": 18
+    }
+},
+{
+    "model": "main.patient",
+    "pk": 10,
+    "fields": {
+        "birthday": "1989-02-10",
+        "address": "Барнаул",
+        "blood_type": "B(|||) Rh+",
+        "gender": "женщина",
+        "place_of_work": "Туристическое агентство Альпы",
+        "hobbies": "Туризм",
+        "discount_status": 0,
+        "owner": 19
+    }
+},
+{
+    "model": "main.patient",
+    "pk": 11,
+    "fields": {
+        "birthday": "2000-02-28",
+        "address": "Москва",
+        "blood_type": "AB(|V) Rh+",
+        "gender": "женщина",
+        "place_of_work": "Резиденция президента",
+        "hobbies": "Полеты в Владивосток",
+        "discount_status": 50,
+        "owner": 20
+    }
+},
+{
+    "model": "main.time",
+    "pk": 2,
+    "fields": {
+        "time": "08:00:00"
+    }
+},
+{
+    "model": "main.time",
+    "pk": 3,
+    "fields": {
+        "time": "09:00:00"
+    }
+},
+{
+    "model": "main.time",
+    "pk": 4,
+    "fields": {
+        "time": "10:00:00"
+    }
+},
+{
+    "model": "main.time",
+    "pk": 5,
+    "fields": {
+        "time": "11:00:00"
+    }
+},
+{
+    "model": "main.time",
+    "pk": 6,
+    "fields": {
+        "time": "12:00:00"
+    }
+},
+{
+    "model": "main.time",
+    "pk": 7,
+    "fields": {
+        "time": "13:00:00"
+    }
+},
+{
+    "model": "main.time",
+    "pk": 8,
+    "fields": {
+        "time": "14:00:00"
+    }
+},
+{
+    "model": "main.time",
+    "pk": 9,
+    "fields": {
+        "time": "15:00:00"
+    }
+},
+{
+    "model": "main.time",
+    "pk": 10,
+    "fields": {
+        "time": "16:00:00"
+    }
+},
+{
+    "model": "main.time",
+    "pk": 11,
+    "fields": {
+        "time": "17:00:00"
+    }
+},
+{
+    "model": "main.time",
+    "pk": 12,
+    "fields": {
+        "time": "18:00:00"
+    }
+},
+{
+    "model": "main.time",
+    "pk": 13,
+    "fields": {
+        "time": "19:00:00"
+    }
+},
+{
+    "model": "main.time",
+    "pk": 14,
+    "fields": {
+        "time": "20:00:00"
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 2,
+    "fields": {
+        "date": "2023-09-15",
+        "time": 5,
+        "doctor": 7,
+        "status": "Активный",
+        "owner": 1
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 3,
+    "fields": {
+        "date": "2023-09-21",
+        "time": 8,
+        "doctor": 3,
+        "status": "Активный",
+        "owner": 1
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 5,
+    "fields": {
+        "date": "2023-09-16",
+        "time": 3,
+        "doctor": 3,
+        "status": "Активный",
+        "owner": 1
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 6,
+    "fields": {
+        "date": "2023-09-23",
+        "time": 10,
+        "doctor": 6,
+        "status": "Активный",
+        "owner": 1
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 7,
+    "fields": {
+        "date": "2023-09-29",
+        "time": 4,
+        "doctor": 10,
+        "status": "Активный",
+        "owner": 1
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 8,
+    "fields": {
+        "date": "2023-09-20",
+        "time": 4,
+        "doctor": 8,
+        "status": "Активный",
+        "owner": 4
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 9,
+    "fields": {
+        "date": "2023-09-28",
+        "time": 13,
+        "doctor": 5,
+        "status": "Активный",
+        "owner": 4
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 10,
+    "fields": {
+        "date": "2023-09-23",
+        "time": 6,
+        "doctor": 9,
+        "status": "Активный",
+        "owner": 4
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 11,
+    "fields": {
+        "date": "2023-09-20",
+        "time": 9,
+        "doctor": 6,
+        "status": "Активный",
+        "owner": 15
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 12,
+    "fields": {
+        "date": "2023-09-19",
+        "time": 7,
+        "doctor": 10,
+        "status": "Активный",
+        "owner": 15
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 13,
+    "fields": {
+        "date": "2023-09-28",
+        "time": 12,
+        "doctor": 4,
+        "status": "Активный",
+        "owner": 15
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 14,
+    "fields": {
+        "date": "2023-09-24",
+        "time": 10,
+        "doctor": 3,
+        "status": "Активный",
+        "owner": 15
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 15,
+    "fields": {
+        "date": "2023-09-28",
+        "time": 5,
+        "doctor": 8,
+        "status": "Активный",
+        "owner": 15
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 23,
+    "fields": {
+        "date": "2023-09-18",
+        "time": 9,
+        "doctor": 3,
+        "status": "Активный",
+        "owner": 15
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 24,
+    "fields": {
+        "date": "2023-09-26",
+        "time": 9,
+        "doctor": 3,
+        "status": "Активный",
+        "owner": 15
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 25,
+    "fields": {
+        "date": "2023-09-21",
+        "time": 5,
+        "doctor": 6,
+        "status": "Активный",
+        "owner": 17
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 26,
+    "fields": {
+        "date": "2023-09-19",
+        "time": 4,
+        "doctor": 7,
+        "status": "Активный",
+        "owner": 17
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 27,
+    "fields": {
+        "date": "2023-09-23",
+        "time": 13,
+        "doctor": 10,
+        "status": "Активный",
+        "owner": 17
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 28,
+    "fields": {
+        "date": "2023-09-26",
+        "time": 11,
+        "doctor": 3,
+        "status": "Активный",
+        "owner": 17
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 29,
+    "fields": {
+        "date": "2023-09-19",
+        "time": 8,
+        "doctor": 4,
+        "status": "Активный",
+        "owner": 18
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 30,
+    "fields": {
+        "date": "2023-09-20",
+        "time": 6,
+        "doctor": 5,
+        "status": "Активный",
+        "owner": 18
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 31,
+    "fields": {
+        "date": "2023-09-23",
+        "time": 3,
+        "doctor": 6,
+        "status": "Активный",
+        "owner": 18
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 32,
+    "fields": {
+        "date": "2023-09-23",
+        "time": 5,
+        "doctor": 4,
+        "status": "Активный",
+        "owner": 18
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 33,
+    "fields": {
+        "date": "2023-09-23",
+        "time": 7,
+        "doctor": 8,
+        "status": "Активный",
+        "owner": 18
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 34,
+    "fields": {
+        "date": "2023-09-25",
+        "time": 4,
+        "doctor": 8,
+        "status": "Активный",
+        "owner": 18
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 35,
+    "fields": {
+        "date": "2023-09-27",
+        "time": 12,
+        "doctor": 9,
+        "status": "Активный",
+        "owner": 18
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 36,
+    "fields": {
+        "date": "2023-09-20",
+        "time": 4,
+        "doctor": 5,
+        "status": "Активный",
+        "owner": 19
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 37,
+    "fields": {
+        "date": "2023-09-20",
+        "time": 10,
+        "doctor": 10,
+        "status": "Активный",
+        "owner": 19
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 38,
+    "fields": {
+        "date": "2023-09-22",
+        "time": 8,
+        "doctor": 3,
+        "status": "Активный",
+        "owner": 19
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 39,
+    "fields": {
+        "date": "2023-09-23",
+        "time": 5,
+        "doctor": 10,
+        "status": "Активный",
+        "owner": 19
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 40,
+    "fields": {
+        "date": "2023-09-24",
+        "time": 2,
+        "doctor": 7,
+        "status": "Активный",
+        "owner": 19
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 41,
+    "fields": {
+        "date": "2023-09-30",
+        "time": 13,
+        "doctor": 4,
+        "status": "Активный",
+        "owner": 19
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 42,
+    "fields": {
+        "date": "2023-09-19",
+        "time": 4,
+        "doctor": 9,
+        "status": "Активный",
+        "owner": 20
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 43,
+    "fields": {
+        "date": "2023-09-18",
+        "time": 7,
+        "doctor": 10,
+        "status": "Активный",
+        "owner": 20
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 44,
+    "fields": {
+        "date": "2023-09-27",
+        "time": 8,
+        "doctor": 9,
+        "status": "Активный",
+        "owner": 20
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 45,
+    "fields": {
+        "date": "2023-09-23",
+        "time": 9,
+        "doctor": 9,
+        "status": "Активный",
+        "owner": 20
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 46,
+    "fields": {
+        "date": "2023-09-26",
+        "time": 8,
+        "doctor": 5,
+        "status": "Активный",
+        "owner": 20
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 47,
+    "fields": {
+        "date": "2023-09-28",
+        "time": 2,
+        "doctor": 4,
+        "status": "Активный",
+        "owner": 20
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 48,
+    "fields": {
+        "date": "2023-09-30",
+        "time": 14,
+        "doctor": 6,
+        "status": "Активный",
+        "owner": 20
+    }
+},
+{
+    "model": "main.appointment",
+    "pk": 49,
+    "fields": {
+        "date": "2023-09-14",
+        "time": 13,
+        "doctor": 3,
+        "status": "Активный",
+        "owner": 17
+    }
+},
+{
+    "model": "main.feedback",
+    "pk": 2,
+    "fields": {
+        "text": "Мой лечащий врач Светлана Горб, великолепный профессионал, врач от Бога, назначил обследования, внимательно все изучил, поставил диагноз и назначил лечение, которое помогает, снял полностью боль, прохожу курс массажа для реабилитации, благодарю доктор за помощь и рекомендую!",
+        "date_time": "2023-09-14T07:57:50.128Z",
+        "is_active": true,
+        "owner": 1
+    }
+},
+{
+    "model": "main.feedback",
+    "pk": 3,
+    "fields": {
+        "text": "Периодонтит – это была непростая проблема, но благодаря профессионализму врачей и их внимательному подходу к лечению, процесс был гораздо более комфортным, чем я предполагал.\r\n\r\nСразу же после диагностики, врач провел детальную консультацию, на которой подробно объяснил мне характер проблемы, а также разъяснил, как будет проводиться лечение. Лечение периодонтита было проведено профессионально и безболезненно. Весь процесс был дополнительно облегчен заботливой анестезией и внимательностью врача к моему состоянию. Очень благодарен доброму доктору и Демократу в целом!",
+        "date_time": "2023-09-14T07:57:58.207Z",
+        "is_active": true,
+        "owner": 1
+    }
+},
+{
+    "model": "main.feedback",
+    "pk": 4,
+    "fields": {
+        "text": "Был сегодня на УЗИ у зав. отделением. Безумно удивлена такому чуткому отношению и внимательности врача. Кажется - зав. отделением, времени совсем не должно быть, но она настолько с участием относится к пациентам. Осмотр прошел очень тщательно и профессионально! Врач ответила на все вопросы, разъяснила все моменты по проблеме. Спасибо огромное!",
+        "date_time": "2023-09-14T08:22:36.656Z",
+        "is_active": true,
+        "owner": 4
+    }
+},
+{
+    "model": "main.feedback",
+    "pk": 5,
+    "fields": {
+        "text": "Добрый вечер! Прошу вас провести беседы с младшим медицинским персоналом, а именно медсëстрами отделения хирургии и травматологии.\r\n\r\nСуть случившегося заключается в том что медсестра позволила себе в отношении 8 летнего ребëнка недопустимые высказывания и том, что он мерзкий. Это недопустимо в отношении детей вообще никак, от слова совсем!\r\n\r\nНадеюсь на вашу помощь в данной ситуации, к сожалению, фамилию медсестры назвать не могу, но на смене она была в день 06.09.2023 года.",
+        "date_time": "2023-09-14T08:25:49.631Z",
+        "is_active": true,
+        "owner": 15
+    }
+},
+{
+    "model": "main.feedback",
+    "pk": 6,
+    "fields": {
+        "text": "Приходили в Солнечную с ребенком к детскому хирургу. Надо было также сдать кровь, я переживал, потому что сын у меня активный, всегда были проблемы со взятием крови из вены. Но тут все прошло отлично, медсестра смогла успокоить сыночка, увлечь его и с первого раза попала в вену. Я был очень рад, если честно.\r\n\r\nАнализы, кстати, были готовы очень быстро, и мы вовремя смогли попасть к хирургу.",
+        "date_time": "2023-09-14T08:27:20.774Z",
+        "is_active": true,
+        "owner": 17
+    }
+},
+{
+    "model": "main.feedback",
+    "pk": 7,
+    "fields": {
+        "text": "Не отвечают на сообщения после того, как попросила лицензию и данные клиники!\r\n\r\nНачалось все с того, что готовили собаку к операции. Нужно было сделать узи (по вотсап написали 1000₽), в итоге в чеке 2000₽. Сделали «расширенное узи, которое рекомендовал сам узист», только нам оно не надо было и никто даже не спросил делать его или нет, какое самочувствие собаки, есть ли жалобы...\r\n\r\nСами себе рекомендовали, сами сделали, а мне потом заплати. Делать операцию в этой клинике не стали! У администратора хамское отношение!",
+        "date_time": "2023-09-14T08:28:54.863Z",
+        "is_active": true,
+        "owner": 18
+    }
+},
+{
+    "model": "main.feedback",
+    "pk": 8,
+    "fields": {
+        "text": "Стояла в очереди час, чтоб записаться на мрт, я думала - бабуся, что была за мной, просто не доживёт до своей очереди. Ей было очень плохо, и даже пропустив её вперёд, её отправили на другой этаж, что-то там переписывать, Опять новшества, запись на посту на втором этаже, сидят две тётки (по другому не скажешь): одна всё бегала куда-то, вторая вообще сказала, что она занята и запись не ведёт.\r\n\r\nЧто касается самого лечения, это тоже ничем не лучше, пэт кт не добиться, аппараты мрт вечно сломаны, куда-то ехать отправляют, как будто больные люди все мобильны, есть врачи хамы, конкретную фамилию говорить не стану.\r\n\r\nВ общем, только негатив вызывает этот цаоп. Не должно так быть в онкологическом корпусе!",
+        "date_time": "2023-09-14T08:29:32.777Z",
+        "is_active": true,
+        "owner": 19
+    }
+},
+{
+    "model": "main.feedback",
+    "pk": 9,
+    "fields": {
+        "text": "Была на приеме у ревматолога Петровой О. А. Очень понравился врач. Вежливая, внимательно выслушала мои жалобы. Давно болею ревматоидным артритом. Препарат, который назначил предыдущий врач, не оказывал действие. Оксана Александровна заменила мне препарат. Сейчас чувствую себя лучше, прекратились боли. Спасибо. Рекомендую.",
+        "date_time": "2023-09-14T08:29:52.494Z",
+        "is_active": true,
+        "owner": 19
+    }
+},
+{
+    "model": "main.feedback",
+    "pk": 10,
+    "fields": {
+        "text": "Ужасная асимметрия лица после инъекций диспорта у невролога М.! Не рекомендую обращаться к ней! Поберегите свое здоровье! Вредит своим лечением! Отобрать у нее все препараты ботокса и близко к ним не подпускать!\r\n\r\nОбращалась к ней в Центр Междисциплинарной Стоматологии и Неврологии на Профсоюзной ул. 57.\r\nОбращалась с элементарным вопросом коррекции морщин вокруг глаз, лба и носогубки, в результате одна бровь выше другой и кривая улыбка, тяжело разговаривать. Диспорт никак не убирается, так что с этим жить полгода. Страшно, что такие специалисты существуют и, более того. она еще занимается обучением!\r\n\r\nНикому не пожелаю столкнуться с такими специалистами!",
+        "date_time": "2023-09-14T08:30:17.695Z",
+        "is_active": true,
+        "owner": 19
+    }
+},
+{
+    "model": "main.feedback",
+    "pk": 11,
+    "fields": {
+        "text": "Клинику нужно проверить органам. Хамство, обман, матершиница управляющая Катерина, администраторы, навязывающие услуги, те, что надо и не надо... Система работы: сделайте мрт и потом все срочно (капельницы), нужны они или нет.\r\n\r\nКогда в состоянии срочности попали, конечно, не смогли оценить все происходящее, но когда поняли как все у них поставлено, началось самое интересное: не хотели отдавать протокол, ссылаясь на не оплату за услуги, при этом два дня просили перевод оплатить, как кассовый апарат не работает. КОГДА отказалась делать переводом, что оплату произведу только оплатой картой, сказали, что протокол не дадут.\r\n\r\nПисать можно долго, но, думаю, не стоит. Пусть разбираются органы.\r\n\r\nБУДЬТЕ АККУРАТНЫ в выборе этой клиники.",
+        "date_time": "2023-09-14T08:31:29.502Z",
+        "is_active": true,
+        "owner": 20
+    }
+},
+{
+    "model": "main.feedback",
+    "pk": 12,
+    "fields": {
+        "text": "В районную поликлинику никак не записаться на маммографию, то очередь на полгода, то специалисты в отпуске или болеют. Благо есть такие клиники как Центр медицинской диагностики. Хотя нет, эта клиника отличается от многих их них. Сюда реально приятно приходить, здесь тебе всегда рады. Диагнозов не выдумывают, не стараются нажиться, все вопросы у доктора строго по делу. Сделала маммографию, слава богу, мои опасения не подтвердились - все хорошо.",
+        "date_time": "2023-09-14T08:32:50.639Z",
+        "is_active": true,
+        "owner": 20
+    }
+},
+{
+    "model": "blog.blog",
+    "pk": 5,
+    "fields": {
+        "name": "ВОЗ объявит подсластитель аспартам возможным канцерогеном",
+        "slug": "voz-obyavit-podslastitel-aspartam-vozmozhnyim-kantserogenom",
+        "content": "Аспартам был открыт в 1965 году, в нем ноль калорий, и при этом он в 150-200 раз слаще сахара. Но способность продуктов, содержащих этот искусственный подсластитель, снижать риск диабета или ожирения никогда не подтверждалась. Наоборот,  некоторые данные свидетельствуют о том, что вкус как сахаросодержащих, так и искусственно подслащенных напитков усиливает чувство голода и, как следствие, вызывает увеличение веса.\r\n\r\nВо всем мире аспартам можно найти в более чем 6000 продуктах, включая продукты питания и напитки, леденцы от кашля и некоторые зубные пасты, что указывает на повсеместное присутствие этого химического вещества.\r\n\r\nПо данным Управления по санитарному надзору за качеством пищевых продуктов и медикаментов США (FDA), допустимая суточная доза аспартама составляет 50 мг/кг, в то время как европейские регулирующие органы рекомендуют не превышать 40 мг/кг аспартама как для взрослых, так и для детей. \r\n\r\nПосле употребления аспартама это химическое вещество гидролизуется и всасывается в желудочно-кишечном тракте. Этот процесс приводит к высвобождению метанола, аспарагиновой кислоты и фенилаланина.\r\n\r\nМетаболизм метанола начинается в печени, где он сначала окисляется до формальдегида, а затем снова до муравьиной кислоты. В дополнение к прямому повреждению печени метанолом, формальдегид также непосредственно токсичен для клеток печени и связан с канцерогенными свойствами.",
+        "image": "blog/elevated-view-of-notepad-on-laptop-near-coffee-cup-and-succulent-plant-over-medical_sv8JnSo.jpg",
+        "date_time": "2023-09-14T14:16:36.751Z",
+        "publication": true,
+        "owner": 1,
+        "number_of_views": 27
+    }
+},
+{
+    "model": "blog.blog",
+    "pk": 6,
+    "fields": {
+        "name": "Врачи рассказали, как победить хронический простатит",
+        "slug": "vrachi-rasskazali-kak-pobedit-hronicheskij-prostatit",
+        "content": "Хронический простатит — одно из самых распространенных заболеваний предстательной железы у мужчин, которое приводит к проблемам с мочеиспусканием, половой дисфункции, гормональным сбоям и сопровождается болями.\r\n\r\nКак правило, для лечения хронического простатита применяют комплексный подход — включение антибиотиков, нестероидных противовоспалительных препаратов. Однако антибактериальная терапия не всегда дает необходимый эффект. Причиной этого зачастую становятся биопленки, которые могут способствовать развитию бактериальной инфекции, препятствовать эффективному действию антибиотиков и даже затруднять диагностику. Но помимо получения точных результатов анализов, важна своевременная медикаментозная терапия.",
+        "image": "blog/doctor-doing-their-work-in-pediatrics-office.jpg",
+        "date_time": "2023-09-14T15:00:04.429Z",
+        "publication": true,
+        "owner": 17,
+        "number_of_views": 9
+    }
+},
+{
+    "model": "blog.blog",
+    "pk": 7,
+    "fields": {
+        "name": "Запрет ментоловых сигарет может спасти сотни тысячей жизней",
+        "slug": "zapret-mentolovyih-sigaret-mozhet-spasti-sotni-tyisyachej-zhiznej",
+        "content": "Прошлой весной Американская академия педиатрии обратились в Управление по санитарному надзору за качеством пищевых продуктов и медикаментов (FDA) с требованием запретить ментоловые сигареты в связи с тем, что они пользуются повышенным спросом у детей и подростков. В FDA сообщили, что эта мера может быть реализована, но лишь в том случае, если ее эффективность будет научно подтверждена.\r\n\r\nЧтобы представить эти доказательства, ученые Мичиганского университета создали имитационную модель современных тенденций в потреблении разных видов сигарет. Они разработали гипотетический сценарий запрета ментоловых сигарет начиная с 2021 года, основываясь на экспертной оценке потенциального воздействия курения на здоровье населения. Затем исследователи сравнили разницу между смертностью и совокупным числом потерянных лет жизни до 2060 года в случае введения запрета и его отсутствия.",
+        "image": "blog/lady-addict-white-breaks-lovely.jpg",
+        "date_time": "2023-09-14T15:27:32.279Z",
+        "publication": true,
+        "owner": 4,
+        "number_of_views": 2
+    }
+},
+{
+    "model": "blog.blog",
+    "pk": 8,
+    "fields": {
+        "name": "Респираторные заболевания вновь набирают обороты",
+        "slug": "respiratornyie-zabolevaniya-vnov-nabirayut-oborotyi",
+        "content": "С приходом плюсовой температуры в начале весны ежегодно отмечается повышение уровня заболеваемости респираторными инфекциями. За последнюю неделю в России зафиксирован рост заболеваемости населения ОРВИ и гриппом по сравнению с прошлой неделей. Рост составил 72,3 на 10 000 населения и был выше базовой отметки на 3,3%.\r\n\r\nЗащитить организм от заражения и тяжелых осложнений помогает адекватный иммунный ответ. На иммунитет значительно влияют внешние факторы, такие как стресс, недостаток сна, неправильное питание, инфекционные заболевания. «Ослабленный» иммунитет более восприимчив к вирусам и нередко после одного заболевания пациент сразу же переносит новое, вызванное вирусной или бактериальной инфекцией.",
+        "image": "blog/sick-female-person-having-a-headache.jpg",
+        "date_time": "2023-09-14T15:32:49.690Z",
+        "publication": true,
+        "owner": 12,
+        "number_of_views": 1
+    }
+},
+{
+    "model": "blog.blog",
+    "pk": 9,
+    "fields": {
+        "name": "Детский иммунитет: как защитить от вирусов",
+        "slug": "detskij-immunitet-kak-zaschitit-ot-virusov",
+        "content": "Проблема ослабленного иммунитета встала наиболее остро после пандемии коронавирусной инфекции. Эксперты уверены, что лучшая защита от инфицирования — адекватный иммунитет, который необходимо тренировать. Зайцева Ольга Витальевна, д.м.н., профессор, зав. кафедрой педиатрии ФГБОУ ВПО МГМСУ им. А.И. Евдокимова МЗ РФ, Заслуженный врач РФ, отметила важность иммунокоррекции, как в целях терапии, так и профилактики.\r\n\r\nДетский организм очень хрупкий и к иммунокоррекции у детей специалисты подходят с большой осторожностью, подбирая те средства, которые обладают наиболее естественным влиянием на иммунную систему. Калюжин Олег Витальевич, д.м.н., профессор кафедры клинической иммунологии и аллергологии ФГАОУ ВО Первый МГМУ им. И.М. Сеченова Минздрава России обратил внимание на препарат азоксимера бромид (Полиоксидоний®). Важнейшей задачей иммунокоррекции любых заболеваний является не только восполнение недостающего иммунного ответа, но и подавление избыточности некоторых иммунных реакций. Азоксимера бромид — универсальное средство, применяемое как при недостатке, так и при избытке реагирования организма.",
+        "image": "blog/smiley-girl-posing-while-covering-eyes-with-lemon-slices.jpg",
+        "date_time": "2023-09-14T15:34:45.942Z",
+        "publication": true,
+        "owner": 10,
+        "number_of_views": 6
+    }
+},
+{
+    "model": "blog.blog",
+    "pk": 10,
+    "fields": {
+        "name": "Антибиотики детям стали давать чаще на 46% за 20 лет",
+        "slug": "antibiotiki-detyam-stali-davat-chasche-na-46-za-20-let",
+        "content": "Обширный анализ данных более чем 280 тысяч детей со всего мира показал, что в странах с высоким доходом потребление антибиотиков оставалось стабильным, по крайней мере до пандемии. Однако в Северной Африке, на Ближнем Востоке и в Южной Азии антибактериальные препараты стали использовать более чем в два раза чаще. Популярность отдельных препаратов, например, цефалоспоринов третьего поколения, выросла в 37 раз. \r\n\r\nПри этом в странах Африки к югу от пустыни Сахара наблюдается самый низкий уровень потребления антибиотиков в мире. Авторы исследования отмечают, что именно в этом регионе сильнее всего распространен сепсис. Также беспокойство вызывает ненадлежащее применение антибактериальных препаратов в странах Южной и Юго-Восточной Азии, где много нелицензированных поставщиков лекарств и распространено самолечение.",
+        "image": "blog/woman-s-hand-pours-the-medicine-pills-out-of-the-bottle.jpg",
+        "date_time": "2023-09-14T15:36:23.986Z",
+        "publication": true,
+        "owner": 8,
+        "number_of_views": 3
+    }
+}
+]

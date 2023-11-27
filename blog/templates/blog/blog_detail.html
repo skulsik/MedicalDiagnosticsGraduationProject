@@ -1,0 +1,60 @@
+{% extends 'main/base.html' %}
+{% load FilterExtension %}
+{% block content %}
+
+
+<!-- Start Page Title Section -->
+    <div class="page-ttl">
+        <div class="layer-stretch">
+            <div class="page-ttl-container">
+                <h1>Просмотр публикации</h1>
+                <p><a href="{% url 'main:home' %}">Главная</a> &#8594; <a href="{% url 'blog:user_list_blog' %}">Все публикации</a> &#8594; <span>Публикация</span></p>
+            </div>
+        </div>
+    </div><!-- End Page Title Section -->
+    <!-- Start Blog Section -->
+    <div class="layer-stretch">
+        <div class="layer-wrapper">
+            <div class="row">
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8 text-center">
+                    <div class="theme-material-card">
+                        <div class="theme-img blog-picture">
+                            <img class="" src="{{ object.image|mediapath }}" alt="">
+                        </div>
+                        <h2 class="blog-ttl">{{ object.name }}</h2>
+                        <ul class="blog-detail">
+                            <li><i class="fa fa-user-o"></i>{{ object.owner.first_name }} {{ object.owner.last_name }}</li>
+                            <li><i class="fa fa-calendar-o"></i>{{ object.date_time }}</li>
+                            <li>Просмотров: {{ object.number_of_views }}</li>
+                        </ul>
+                        <div class="blog-post">
+                            <p>{{ object.content }}</p>
+                        </div>
+                        <div class="row blog-meta">
+                            <div class="col-sm-7 blog-tag">
+                                {% if object.owner == user %}
+                                <a href="{% url 'blog:delete_blog' object.slug %}">Удалить</a>&nbsp&nbsp&nbsp
+                                <a href="{% url 'blog:update_blog' object.slug %}">Редактировать</a>
+                                {% endif %}
+                            </div>
+                            <div class="col-sm-5 text-right">
+                                <ul class="social-list social-list-sm">
+                                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-google"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-flickr"></i></a></li>
+                                    <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2"></div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}
